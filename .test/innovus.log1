@@ -1,0 +1,38 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.10-p003_1, built Thu Feb 1 13:54:57 PST 2024
+Options:	-nowin -init innovus.cmd 
+Date:		Fri Feb  9 10:13:52 2024
+Host:		sjcvl-vinita (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+OS:		Red Hat Enterprise Linux Workstation 7.6 (Maipo)
+
+License:
+		[10:13:52.145251] Configured Lic search path (23.02-s003): 5280@sjflex5:5280@sjflex4:5280@sjflex3
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+Initializing synthesis services. 4809
+Loading PLUS pre-generated definitions
+CadenceDomain: PLUS environment variables.
+::env(PLUS_ATTRIBUTE_SOURCE) = DB
+::env(PLUS_PHYS_TCL)         = /icd/flow/INNOVUS/INNOVUS231/23.10-p003_1/lnx86/tools.lnx86/../etc/synth/attr_def/plus_attr_defs.tcl /icd/flow/INNOVUS/INNOVUS231/23.10-p003_1/lnx86/tools.lnx86/../etc/synth/attr_def/plus_msg_defs.tcl...
+source /icd/flow/INNOVUS/INNOVUS231/23.10-p003_1/lnx86/tools.lnx86/../etc/synth/attr_def/plus_attr_defs.tcl
+Loading attribute definitions from mini dummy db...
+Info: Defined 22799 Synthesis attributes
+Info: Skipped defining 414 Synthesis attributes already defined in Innovus
+source /icd/flow/INNOVUS/INNOVUS231/23.10-p003_1/lnx86/tools.lnx86/../etc/synth/attr_def/plus_msg_defs.tcl
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "innovus.cmd" ...
+<CMD> setDrawView fplan
+
+*** Memory Usage v#2 (Current mem = 1610.863M, initial mem = 812.637M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:38.8, real=0:00:47.0, mem=1610.9M) ---

@@ -1,0 +1,20 @@
+#!/bin/csh
+
+set mach = `uname`
+if ($mach == "SunOS") then
+        setenv port tools.sun4v
+else if ($mach == "HP-UX") then
+        setenv port hppa
+else if ($mach == "Linux") then
+        setenv port tools
+else
+        echo ""
+        echo "ERROR: Cannot find machine type."
+        echo ""
+        exit
+endif
+
+setenv BUILD /cds/DDI/DDI221/22.10-p001_1/INNOVUS221/$port
+
+set path = ( $path  $BUILD/bin )
+

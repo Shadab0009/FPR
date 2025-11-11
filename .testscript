@@ -1,0 +1,151 @@
+#!/bin/csh -f
+# setup inn231 v23.10-p003_1
+#
+###############################################################
+#
+#
+#               CADENCE  DESIGN  SYSTEMS  INCORPORATED
+#
+# The copyright notice appearing above is included to provide statutory
+# protection in the event of unauthorized or unintentional public disclosure
+# without written consent of an officer of Cadence Design Systems Incorporated.
+#
+#######################################################################
+#
+# This is the script to be run to verify a course database/software 
+# installation. You are prompted to run the script Graphically or
+# Nongraphically
+#
+  echo " "
+  echo " **********************************************************"
+  echo " Running the INNOVUS 23.1 Installation Test --- Feb 2024 " 
+  echo " Installation Test Script"
+  echo " **********************************************************"
+  echo " "
+
+rm -rf ./.test
+#
+set thisFile=".testscript"
+########################################################################
+#
+# Check to see if the software is installed. DO NOT make changes to
+# this section.
+#
+set SOFTWARE_DIR=`which innovus | awk '{print $1}'`
+if (  "${SOFTWARE_DIR}" == "no" ) then
+echo "ERROR: The software path is not in the .cshrc file"
+exit(0)
+endif
+#
+########################################################################
+#
+# Check to see if user wants to run the test results again without
+# rerunning the test
+#
+set mailuser="vinita"
+#
+  #
+  # Clean up from previous test run by removing and recopying .test file
+  #
+  #
+  if (-e .test ) then
+      rm -rf .test
+  endif
+      cp -r .testMaster .test
+#
+########################################################################
+#
+# Check to see if user wants to run the test graphically or nongraphically
+#
+# This section is generic for all courses and normally does not need to be 
+# customized.
+#
+#
+########################################################################
+#
+#  The command section that follows normally needs to be customized for
+#  each test script.
+#
+  #run tests
+echo "Running Innovus  License and installation Test" 
+set TESTNAME = "Innovus License and installation Test" 
+echo $TESTNAME > .test/results 
+if ( -e $SOFTWARE_DIR ) then
+  echo "cd .test ; innovus -nowin -init innovus.cmd  ; cd .." > .test/runscript
+  chmod +x .test/runscript
+  set command1 = ".test/runscript"
+  #
+  $command1
+   echo "Pass" >> .test/results
+endif
+  #
+##
+#
+########################################################################
+#
+#  The Verification Set Tests that follow normally need to be customized
+#  for each test.
+#
+#Begin Verification set 0
+  # Check if the version is correct   
+set TESTNAME = "Version Test" 
+echo $TESTNAME >> .test/results 
+  set Version = v23.10-p003_1,
+    
+rm -f .test/*logv*
+
+  set getVersion = `grep "Version" .test/innovus.log* | awk '{print $2}' `
+   
+ echo "Printing out Version "
+ echo $getVersion
+
+   if ( $Version != $getVersion ) then
+     echo "FAIL" >> .test/results
+     echo "Incorrect $getVersion installed, should be $Version" >> .test/results 
+   else 
+   echo "Pass" >> .test/results
+  endif
+
+#
+######################################################################
+#
+# The following section reports the test results. This is generic for all
+# test scripts and should NOT need to be customized.
+#
+# CROSSTALK, SCAN, ECL
+# results reporting
+set RESULTS = `grep FAIL .test/results`
+if ("${RESULTS}" != "") then
+  echo "" >> .test/results
+  echo "" >> .test/results
+  echo "  *******************************************************" >> .test/results
+  echo "  * Recommended Suggestions for Corrections of FAILURES *" >> .test/results
+  echo "  *******************************************************" >> .test/results
+  echo "" >> .test/results
+  echo "  1. Read the Course Installation Guide and verify that" >> .test/results 
+  echo "     you followed the installation steps correctly." >> .test/results
+  echo "  2. Check the README file for any course specific setup" >> .test/results
+  echo "     requirements." >> .test/results
+  echo "  3. Check the Software Products Required section of the" >> .test/results
+  echo "     README file for a list of products that are used in" >> .test/results
+  echo "     this course." >> .test/results
+  echo "Installation Test FAILS for  Innovus Course  " 
+  echo "  For details execute: cat .test/results"
+  echo "Installation Test for Innovus Course FAILS on" `date` > .test/installResults 
+  set mailsubject="FAIL -  Innovus Course Installation Test on `date` " 
+else
+  echo "Installation Test Passes for Innovus Course  " 
+  echo "Installation Test for  Innovus Course Passes on" `date` > .test/installResults 
+  set mailsubject="Pass -  Innovus Course Installation Test on `date` " 
+endif
+if ("${mailuser}" != "") then
+        mail -s "$mailsubject" $mailuser < /dev/null
+endif
+#
+###################################################################
+#
+# Complete the Test Script and File Cleanup
+#
+ # rm -rf  .test
+#
+exit

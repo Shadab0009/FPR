@@ -1,0 +1,3 @@
+finput lef f .test/rpuTop.lef;
+input def f .test/VIP_dp.def ;
+fquit;

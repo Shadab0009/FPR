@@ -1,0 +1,1 @@
+cd .test ; innovus -nowin -init innovus.cmd  ; cd ..

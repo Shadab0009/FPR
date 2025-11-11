@@ -1,0 +1,5 @@
+#rp# (hldUiSetEnvVar "hldGeSelByPointObjectType" "inst" "b")
+#rp# (hldUiSetEnvVar "hldGeMoveCopySnapMode" "90" "b")
+#rp# (hldUiSetEnvVar "hldGeMoveCopyOrientMode" "R0" "b")
+#rp# (abs:version)
+ (excl:exit)

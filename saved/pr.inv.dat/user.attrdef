@@ -1,0 +1,1 @@
+define_attribute designRuleWidth -data_type double -obj_type pin -category write_def -help_string {DEF property} -default_value {no_value} -quiet

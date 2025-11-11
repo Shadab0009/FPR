@@ -1,0 +1,13 @@
+set v place.delay.weight -1 ; 
+fload TRAIN20 ;
+inp def f Defs/train20.def ;
+place timing ;
+croute delay net clock driver buf count 2 input in output out ;
+croute cluster driver buf count 2 prefix clk spin vdd net vdd spin
+vss net vss clocknet clock input in output out pattern balanced ;
+fload TRAIN20 ;
+inp def f Defs/train20.def ;
+finp def f .test/place.def ;
+qplace ;
+qroute ;
+fquit ;
