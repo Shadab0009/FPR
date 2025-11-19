@@ -1,0 +1,121 @@
+Product Version     21.15    Cadence Design Systems, Inc.
+createStairwayBoundary(21.15)                                                      createStairwayBoundary(21.15)
+
+
+
+Name
+       createStairwayBoundary  -  Creates  small  stairway  rectilinear edges at a specified partition corner to
+       improve congestion
+
+Syntax
+       createStairwayBoundary [-help] -dx  <value>  -dy  <value>  [-growNeighborPtnDir  {<x  y>}]  -ptn  <parti-
+       tion_name> -step <number_of_steps> {-corner {LL LR UL UR} | -vertex <number_of_vertex>}
+
+Description
+       Creates small stairway rectilinear edges at a specified partition corner to improve congestion.
+
+       Note: This command does not support master/clones.
+
+       Note:  The  -dx,   -dy, -ptn, -step, and  -corner/-vertex options should be set by default. The partition
+       will snap to the row automatically.
+
+
+Parameters
+       -help  Outputs a brief description that includes the type and default information for each
+
+              createStairwayBoundary parameter.
+
+              For a detailed description of the command and all of its parameters, use the man command:
+
+              man createStairwayBoundary
+
+       -corner {LL LR UL UR}
+              Specifies partition corner where a stairway will be created.
+
+              * UL: Upper left
+
+              * LL: Lower left
+
+              * LR: Lower right
+
+              * UR: Upper right
+
+
+              Data_type: enum, optional
+
+       -dx <value>
+              Specifies step width.
+
+              Data_type: float, required
+
+       -dy <value       >
+              Specifies step height.
+
+              Data_type: float, required
+
+       -growNeighborPtnDir {<x y>}
+              Specifies the direction of the target partition in which the neighbor partition will grow to  fill
+              the  stairway  gap  between the target partition and the neighbor partition. If this option is not
+              specified, no abutted partition will grow.
+
+              Data_type: enum, optional
+
+       -ptn <partition_name>
+              Specifies the name of the target partition.
+
+              Data_type: string, required
+
+       -step <number_of_steps>
+              Specifies the number of steps to be created in stairway.
+
+              Data_type: int, required
+
+       -vertex <number_of_vertex >
+              Specifies partition vertex where stairway will be created. Vertex starts from the lower-left  cor-
+              ner  of  the partition clockwise. The first vertex is 0. A vertex can be negative, and for a nega-
+              tive vertex, corner numbering starts at 0 from the lower-left corner of a partition counter clock-
+              wise.
+
+              (<Image> To view the image, refer to the Innovus Text Command Reference - Release 21.1 manual.)
+
+
+              Data_type: int, optional
+
+
+Examples
+              * The following command creates five-stairway rectilinear edges. The width and height of steps are
+                10.
+
+                createStairwayBoundary -dx 10 -dy 10 -ptn mcore -step 5 -corner UR
+
+                (<Image> To view the image, refer to the Innovus Text Command Reference - Release 21.1 manual.)
+
+
+              * The following command sets -growNeighborPtnDir y, and the partition next to the target partition
+                in the Y direction extends.
+
+                createStairwayBoundary  -dx  10  -dy 10 -ptn regfile_iu_rftype2_abits8_dbits32_words136  -step 5
+                -corner UL -growNeighborPtnDir y
+
+                (<Image> To view the image, refer to the Innovus Text Command Reference - Release 21.1 manual.)
+
+              * The following command sets -growNeighborPtnDir x, and the partition next to the target partition
+                in the X direction extends.
+
+                createStairwayBoundary  -dx  10  -dy 10 -ptn regfile_iu_rftype2_abits8_dbits32_words136  -step 5
+                -corner UL -growNeighborPtnDir x
+
+                (<Image> To view the image, refer to the Innovus Text Command Reference - Release 21.1 manual.)
+
+              * The following command changes the vertex 2 to a stairway.
+
+                createStairwayBoundary -dx 10 -dy 10 -ptn iu  -step 5 -vertex 2 -growNeighborPtnDir y
+
+                (<Image> To view the image, refer to the Innovus Text Command Reference - Release 21.1 manual.)
+
+
+
+Related Information
+              * Floorplanning the Design chapter in the Innovus User Guide
+
+                                            Tue Aug 23 02:02:15 2022               createStairwayBoundary(21.15)
