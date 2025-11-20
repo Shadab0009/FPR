@@ -3,13 +3,13 @@ Cadence Innovus(TM) Implementation System.
 Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
-Options:	
-Date:		Thu Nov 20 16:14:32 2025
+Options:	-init ../saved/pr.inv 
+Date:		Thu Nov 20 17:43:23 2025
 Host:		ra01 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*12cpus*Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz 12288KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
 License:
-		[16:14:32.438665] Configured Lic search path (21.01-s002): 5280@192.100.9.133
+		[17:43:23.438689] Configured Lic search path (21.01-s002): 5280@192.100.9.133
 
 		invs	Innovus Implementation System	21.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
@@ -754,30 +754,76 @@ Sourcing startup file /home/shadab/.cadence/innovus/gui.color.tcl
 <CMD> suppressMessage ENCEXT-2799
 <CMD> getVersion
 [INFO] Loading PVS 22.20 fill procedures
-<CMD> win
-<CMD> set defHierChar /
-<CMD> get_message -id GLOBAL-100 -suppress
-<CMD> set locv_inter_clock_use_worst_derate false
-<CMD> set init_io_file dtmf.io
-<CMD> set init_oa_search_lib {}
-<CMD> set init_verilog {../verilog/dtmf_chip_ak.v ../verilog/stubs.v}
-<CMD> set init_pwr_net VDD
-<CMD> set init_mmmc_file ./dtmf.view
+Sourcing file "../saved/pr.inv" ...
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/shadab/shadab/FPR/saved/pr.inv.dat DTMF_CHIP
+#% Begin load design ... (date=11/20 17:43:46, mem=742.2M)
+**WARN: (IMPIMEX-4008):	Variable '::DelayCal::InMemoryDataFlow' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '::MSV::initSNetPrimarySNetDone' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '::dft::debug_attribute' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '::tdg_timing::capri_mode_current_report_path_type' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '_timing_report_disable_calculate_arrival_assert' is no longer supported in user data manager and will be ignored.
 Set Default Input Pin Transition as 0.1 ps.
-<CMD> set delaycal_input_transition_delay 0.1ps
-<CMD> set init_lef_file ../lef/all.lef
-<CMD> set init_top_cell DTMF_CHIP
-<CMD> set fpIsMaxIoHeight 0
-<CMD> set init_gnd_net VSS
-<CMD> get_message -id GLOBAL-100 -suppress
-<CMD> get_message -id GLOBAL-100 -suppress
-<CMD> set timing_case_analysis_for_icg_propagation false
-<CMD> init_design
-#% Begin Load MMMC data ... (date=11/20 16:16:30, mem=759.8M)
-#% End Load MMMC data ... (date=11/20 16:16:30, total cpu=0:00:00.0, real=0:00:00.0, peak res=760.4M, current mem=760.4M)
+**WARN: (IMPIMEX-4008):	Variable 'enc_before_startup_file' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'enc_check_rename_command_name' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'gpsPrivate::coegExpOptTatV3' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'gpsPrivate::coegExpOptTatV4' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'timing_constraint_mmmc_get_lib_objects_reset' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'init_lef_check_antenna' is no longer supported in user data manager and will be ignored.
+**ERROR: (EMS-19):	emsSuppressMsgs failed because the message number 3196 does not exist in the catalog file /home/install/INNOVUS211/share/cdssetup/errormessages/innovus/esi.msg.
+Update the catalog file with correct data and re-register the message catalog.
+Loading design 'DTMF_CHIP' saved by 'Innovus' '23.30-b307_1' on 'Thu Jan 4 10:52:05 2024'.
+**ERROR: (IMPIMEX-7017):	Unable to load the design in the current version '21.15' as design is saved with newer version '23.30' of the software. Refer to previous messages issued regarding design restoration failure.
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 33)
+
+**ERROR: (IMPSYT-6692):	Invalid return code while executing '../saved/pr.inv' was returned and script processing was stopped. Review the following error in '../saved/pr.inv' then restart.
+Error info: ../saved/pr.inv: 
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 33)
+    invoked from within
+"restoreDesign [file dirname [file normalize [info script]]]/pr.inv.dat DTMF_CHIP"
+    invoked from within
+"if {[is_common_ui_mode]} {
+  read_db [file dirname [file normalize [info script]]]/pr.inv.dat
+} else {
+  restoreDesign [file dirname [file normalize [..."
+    (file "../saved/pr.inv" line 8)
+    invoked from within
+"::se_source_orig ../saved/pr.inv"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 188)
+    invoked from within
+"source ../saved/pr.inv"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source ../saved/pr.inv"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source ../saved/pr.inv}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+<CMD> win
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/shadab/shadab/FPR/work/pr.inn.dat DTMF_CHIP
+% Begin load design ... (date=11/20 17:44:09, mem=755.1M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'DTMF_CHIP' saved by 'Innovus' '21.15-s110_1' on 'Thu Nov 20 17:40:30 2025'.
+% Begin Load MMMC data ... (date=11/20 17:44:09, mem=755.9M)
+% End Load MMMC data ... (date=11/20 17:44:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=756.6M, current mem=756.6M)
 dtmf_rc_corner
 
-Loading LEF file ../lef/all.lef ...
+Loading LEF file /home/shadab/shadab/FPR/work/pr.inn.dat/libs/lef/all.lef ...
 Set DBUPerIGU to M2 pitch 1320.
 **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
@@ -833,7 +879,7 @@ Type 'man IMPLF-200' for more detail.
 ##  Check design process and node:  
 ##  Design tech node is not set.
 
-Loading view definition file from ./dtmf.view
+Loading view definition file from /home/shadab/shadab/FPR/work/pr.inn.dat/viewDefinition.tcl
 Reading dtmf_libs_max timing library '/home/shadab/shadab/FPR/lib/pllclk_slow.lib' ...
 Read 1 cells in library 'pllclk' 
 Reading dtmf_libs_max timing library '/home/shadab/shadab/FPR/lib/ram_128x16A_slow_syn.lib' ...
@@ -884,9 +930,9 @@ Reading dtmf_libs_min timing library '/home/shadab/shadab/FPR/lib/tpz973gbc-lite
 **WARN: (TECHLIB-302):	No function defined for cell 'PVSS1DGZ'. The cell will only be used for analysis. (File /home/shadab/shadab/FPR/lib/tpz973gbc-lite_fast.lib)
 **WARN: (TECHLIB-302):	No function defined for cell 'PVDD1DGZ'. The cell will only be used for analysis. (File /home/shadab/shadab/FPR/lib/tpz973gbc-lite_fast.lib)
 Read 4 cells in library 'tpz973g' 
-*** End library_loading (cpu=0.01min, real=0.02min, mem=13.9M, fe_cpu=0.32min, fe_real=2.00min, fe_mem=1133.2M) ***
-#% Begin Load netlist data ... (date=11/20 16:16:32, mem=780.0M)
-*** Begin netlist parsing (mem=1133.2M) ***
+*** End library_loading (cpu=0.01min, real=0.02min, mem=21.4M, fe_cpu=0.32min, fe_real=0.78min, fe_mem=1128.5M) ***
+% Begin Load netlist data ... (date=11/20 17:44:10, mem=775.8M)
+*** Begin netlist parsing (mem=1128.5M) ***
 **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'pllclk' is defined in LEF but not in the timing library.
 Type 'man IMPVL-159' for more detail.
 **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'pllclk' is defined in LEF but not in the timing library.
@@ -934,12 +980,11 @@ Pin 'VDD' of cell 'PVDD1DGZ' is declared as power/ground in LEF but as signal in
 Created 478 new cells from 12 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
-Reading verilog netlist '../verilog/dtmf_chip_ak.v'
-Reading verilog netlist '../verilog/stubs.v'
+Reading verilogBinary netlist '/home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.v.bin'
 
-*** Memory Usage v#1 (Current mem = 1134.219M, initial mem = 476.027M) ***
-*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=1134.2M) ***
-#% End Load netlist data ... (date=11/20 16:16:33, total cpu=0:00:00.1, real=0:00:01.0, peak res=791.4M, current mem=791.4M)
+*** Memory Usage v#1 (Current mem = 1136.484M, initial mem = 476.027M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1136.5M) ***
+% End Load netlist data ... (date=11/20 17:44:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=786.5M, current mem=786.5M)
 Set top cell to DTMF_CHIP.
 Hooked 948 DB cells to tlib cells.
 ** Removed 8 unused lib cells.
@@ -948,13 +993,13 @@ No recursion found.
 Building hierarchical netlist for Cell DTMF_CHIP ...
 *** Netlist is unique.
 ** info: there are 985 modules.
-** info: there are 5906 stdCell insts.
+** info: there are 5632 stdCell insts.
 ** info: there are 71 Pad insts.
 ** info: there are 4 macros.
 
-*** Memory Usage v#1 (Current mem = 1191.645M, initial mem = 476.027M) ***
-Reading IO assignment file "dtmf.io" ...
-Adjusting Core to Left to: 0.6200. Core to Bottom to: 0.2000.
+*** Memory Usage v#1 (Current mem = 1186.910M, initial mem = 476.027M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "/home/shadab/shadab/FPR/work/pr.inn.dat/libs/iofile/dtmf.io" ...
 **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
@@ -964,11 +1009,112 @@ Vertical Layer M2 offset = 660 (derived)
 Start create_tracks
 Generated pitch 0.99 in Metal6 is different from 1.32 defined in technology file in preferred direction.
 Generated pitch 0.56 in Metal5 is different from 1.12 defined in technology file in preferred direction.
+Loading preference file /home/shadab/shadab/FPR/work/pr.inn.dat/gui.pref.tcl ...
+##  Process: 180           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+**WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for tdgp_reg2reg_default path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMinRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -bottomRoutingLayer' instead.
+Change floorplan default-technical-site to 'tsm3site'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 266
+Total number of sequential cells: 178
+Total number of tristate cells: 18
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX1 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFXL CLKBUFX2 CLKBUFX1 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX8 CLKBUFXL
+Total number of usable buffers: 18
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: RFRDX2 RFRDX1 RFRDX4 CLKINVX2 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX8 CLKINVXL INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVXL INVX4 INVX8
+Total number of usable inverters: 21
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY2X1 DLY1X1 DLY4X1 DLY3X1
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PDB04DGZ; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell PCORNERDG; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+Reading floorplan file - /home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.fp.gz (mem = 1435.3M).
+% Begin Load floorplan data ... (date=11/20 17:44:11, mem=1072.3M)
+*info: reset 6376 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 3023920 3024240)
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Start create_tracks
+Generated pitch 0.99 in Metal6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in Metal5 is different from 1.12 defined in technology file in preferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.fp.spr.gz (Created by Innovus v21.15-s110_1 on Thu Nov 20 17:40:30 2025, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1072.9M, current mem=1072.9M)
+There are 71 io inst loaded
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=11/20 17:44:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1074.2M, current mem=1074.2M)
+Reading congestion map file /home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=11/20 17:44:11, mem=1074.4M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=11/20 17:44:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1077.8M, current mem=1077.8M)
+Loading place ...
+% Begin Load placement data ... (date=11/20 17:44:11, mem=1077.8M)
+Reading placement file - /home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Thu Nov 20 17:40:30 2025, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1440.7M) ***
+Total net length = 2.570e+05 (1.227e+05 1.342e+05) (ext = 0.000e+00)
+% End Load placement data ... (date=11/20 17:44:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1078.9M, current mem=1078.7M)
+Reading PG file /home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Thu Nov 20 17:40:30 2025)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1436.7M) ***
+% Begin Load routing data ... (date=11/20 17:44:11, mem=1079.1M)
+Reading routing file - /home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Thu Nov 20 17:40:30 2025 Format: 20.1) ...
+*** Total 6002 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1443.7M) ***
+% End Load routing data ... (date=11/20 17:44:12, total cpu=0:00:00.0, real=0:00:01.0, peak res=1086.6M, current mem=1086.1M)
+% Begin Load DEF data ... (date=11/20 17:44:12, mem=1086.2M)
+Reading DEF file '/home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.scandef.gz', current time is Thu Nov 20 17:44:12 2025 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+DEF file '/home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.scandef.gz' is parsed, current time is Thu Nov 20 17:44:12 2025.
+% End Load DEF data ... (date=11/20 17:44:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1087.0M, current mem=1087.0M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/shadab/shadab/FPR/work/pr.inn.dat/DTMF_CHIP.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1447.7M) ***
+Set Default Input Pin Transition as 0.1 ps.
 Extraction setup Started 
 Initializing multi-corner RC extraction with 1 active RC Corners ...
 **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
 Type 'man IMPEXT-6202' for more detail.
-Reading Capacitance Table File ../captable/t018s6mlv.capTbl ...
+Reading Capacitance Table File /home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/t018s6mlv.capTbl ...
 Cap table was created using Encounter 10.10-s002_1.
 Process name: t018s6mm.
 Importing multi-corner RC tables ... 
@@ -978,7 +1124,7 @@ Summary of Active RC-Corners :
     RC-Corner Name        : dtmf_rc_corner
     RC-Corner Index       : 0
     RC-Corner Temperature : 25 Celsius
-    RC-Corner Cap Table   : '../captable/t018s6mlv.capTbl'
+    RC-Corner Cap Table   : '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/t018s6mlv.capTbl'
     RC-Corner PreRoute Res Factor         : 1
     RC-Corner PreRoute Cap Factor         : 1
     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
@@ -989,13 +1135,13 @@ Summary of Active RC-Corners :
     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
-    RC-Corner Technology file: '../QRC/t018s6mm.tch'
+    RC-Corner Technology file: '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/dtmf_rc_corner/t018s6mm.tch'
  
  Analysis View: dtmf_view_hold
     RC-Corner Name        : dtmf_rc_corner
     RC-Corner Index       : 0
     RC-Corner Temperature : 25 Celsius
-    RC-Corner Cap Table   : '../captable/t018s6mlv.capTbl'
+    RC-Corner Cap Table   : '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/t018s6mlv.capTbl'
     RC-Corner PreRoute Res Factor         : 1
     RC-Corner PreRoute Cap Factor         : 1
     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
@@ -1006,18 +1152,22 @@ Summary of Active RC-Corners :
     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
-    RC-Corner Technology file: '../QRC/t018s6mm.tch'
+    RC-Corner Technology file: '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/dtmf_rc_corner/t018s6mm.tch'
 Updating RC grid for preRoute extraction ...
 Initializing multi-corner capacitance tables ... 
 Initializing multi-corner resistance tables ...
-*Info: initialize multi-corner CTS.
-Reading timing constraints file 'dtmf.sdc' ...
-Current (total cpu=0:00:19.6, real=0:02:06, peak res=1065.4M, current mem=1040.2M)
-DTMF_CHIP
-Number of path exceptions in the constraint file = 9
-INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1106.8M, current mem=1097.3M)
-Current (total cpu=0:00:19.8, real=0:02:06, peak res=1106.8M, current mem=1097.3M)
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=11/20 17:44:12, mem=1096.0M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=11/20 17:44:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1105.5M, current mem=1105.5M)
+dtmf_corner_min dtmf_corner_max
+% Begin load AAE data ... (date=11/20 17:44:12, mem=1149.0M)
+AAE DB initialization (MEM=1540.89 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=11/20 17:44:13, total cpu=0:00:00.4, real=0:00:01.0, peak res=1155.5M, current mem=1155.5M)
 Total number of combinational cells: 266
 Total number of sequential cells: 178
 Total number of tristate cells: 18
@@ -1040,94 +1190,146 @@ List of identified usable delay cells: DLY2X1 DLY1X1 DLY4X1 DLY3X1
 Total number of identified usable delay cells: 4
 List of identified unusable delay cells:
 Total number of identified unusable delay cells: 0
-**WARN: (IMPSYC-2):	Timing information is not defined for cell PDB04DGZ; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
-Type 'man IMPSYC-2' for more detail.
-**WARN: (IMPSYC-2):	Timing information is not defined for cell PCORNERDG; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
-Type 'man IMPSYC-2' for more detail.
-
-*** Summary of all messages that are not suppressed in this session:
-Severity  ID               Count  Summary                                  
-WARNING   IMPLF-200            4  Pin '%s' in macro '%s' has no ANTENNAGAT...
-WARNING   IMPLF-201           50  Pin '%s' in macro '%s' has no ANTENNADIF...
-WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
-WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
-WARNING   IMPSYC-2             2  Timing information is not defined for ce...
-WARNING   IMPVL-159          932  Pin '%s' of cell '%s' is defined in LEF ...
-WARNING   TECHLIB-302          6  No function defined for cell '%s'. The c...
-WARNING   TECHLIB-1177         4  'index_%d' defined in '%s' group should ...
-WARNING   TECHLIB-9108        16   '%s' not specified in the library, usin...
-*** Message Summary: 1017 warning(s), 0 error(s)
-
-<CMD> loadFPlan dtmf_power.fp
-Reading floorplan file - dtmf_power.fp (mem = 1707.6M).
-#% Begin Load floorplan data ... (date=11/20 16:16:55, mem=1109.7M)
-**WARN: (IMPFP-710):	File version 3 is too old.
-Input floorplan file is too old, please consider to replace it with latest version..
-You can save a latest version by using saveFPlan command.
-Deleting old partition specification.
-Set FPlanBox to (0 0 3247920 2784240)
-**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
-Type 'man IMPFP-3961' for more detail.
-**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
-Type 'man IMPFP-3961' for more detail.
-Horizontal Layer M1 offset = 560 (derived)
-Vertical Layer M2 offset = 660 (derived)
-Start create_tracks
-Generated pitch 0.99 in Metal6 is different from 1.32 defined in technology file in preferred direction.
-Generated pitch 0.56 in Metal5 is different from 1.12 defined in technology file in preferred direction.
-Added [1] net(s) in the net-group [group1].
-Added [1] net(s) in the net-group [group1].
-Added [1] net(s) in the net-group [group1].
-There are 3 members in group group1.
-Specified partition name [tdsp] is different from corresponding HInst's cell name [tdsp_core]. Specified partition name shall be changed to be same as corresponding HInst's cell name.
-*info - partition tdsp_core pinLayer on side N 2 4 6
-*info - partition tdsp_core pinLayer on side W 3 5
-*info - partition tdsp_core pinLayer on side S 2 4 6
-*info - partition tdsp_core pinLayer on side E 3 5
-*info - partition arb pinLayer on side N 2 4 6
-*info - partition arb pinLayer on side W 3 5
-*info - partition arb pinLayer on side S 2 4 6
-*info - partition arb pinLayer on side E 3 5
-Set (DTMF_INST/TDSP_CORE_INST) in fence {(335.2800000000 , 335.4400000000) (817.2965000000 , 573.7795000000)}
-Set (DTMF_INST/ARB_INST) in fence {(873.1800000000 , 335.4400000000) (1288.3200000000 , 549.8550000000)}
-There are 71 io inst loaded
-Extracting standard cell pins and blockage ...... 
-Pin and blockage extraction finished
-#% End Load floorplan data ... (date=11/20 16:16:56, total cpu=0:00:00.0, real=0:00:01.0, peak res=1110.9M, current mem=1110.9M)
-<CMD> setDrawView fplan
-<CMD> fit
-<CMD> setLayerPreference node_cell -isVisible 1
-<CMD> setLayerPreference node_cell -isVisible 0
-<CMD> setLayerPreference node_cell -isVisible 1
-<CMD> setLayerPreference node_cell -isVisible 0
-<CMD> setLayerPreference pinObj -isVisible 1
-<CMD> setLayerPreference pinObj -isVisible 0
-dtmf_view_hold dtmf_view_setup
-<CMD> set_power_analysis_mode -reset
-<CMD> set_power_analysis_mode -method static -analysis_view dtmf_view_setup -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
-** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
-
-<CMD> set_power_output_dir -reset
-<CMD> set_power_output_dir ./run1
-<CMD> set_default_switching_activity -reset
-<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
-** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
-
-'set_default_switching_activity' finished successfully.
-<CMD> read_activity_file -reset
-<CMD> set_power -reset
-<CMD> set_powerup_analysis -reset
-<CMD> set_dynamic_power_simulation -reset
-<CMD> report_power -rail_analysis_format VS -outfile ./run1/DTMF_CHIP.rpt
-env CDS_WORKAREA is set to /home/shadab/shadab/FPR/work
-
-Power Net Detected:
-        Voltage	    Name
-             0V	    VSS
-          1.62V	    VDD
-Using Power View: dtmf_view_setup.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_aocv_enable_gba_combine_launch_capture
+timing_enable_backward_compatible_latch_thru_mt_mode
+timing_enable_separate_device_slew_effect_sensitivities
+% End load design ... (date=11/20 17:44:13, total cpu=0:00:03.3, real=0:00:04.0, peak res=1179.5M, current mem=1155.2M)
+dtmf_rc_corner
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'DTMF_CHIP' of instances=5707 and nets=6376 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design DTMF_CHIP.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 1658.793M)
+<CMD> all_hold_analysis_views 
+<CMD> all_setup_analysis_views 
+<CMD> write_sdf -view dtmf_view_setup  -ideal_clock_network DTMF_CHIP.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_delay_calc'. This setting is recommended for generating SDF for functional  simulation applications.
 AAE_INFO: opIsDesignInPostRouteState() is 0
-AAE DB initialization (MEM=1732.83 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: DTMF_CHIP
+# Design Mode: 180nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1732.78)
+AAE_INFO: Cdb files are: 
+ 	/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/slow.cdb
+	/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/fast.cdb
+ 
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[15], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC10_tdsp_portO_15/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop15/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[14], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC11_tdsp_portO_14/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop14/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[13], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC12_tdsp_portO_13/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop13/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[12], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC13_tdsp_portO_12/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop12/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[11], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC14_tdsp_portO_11/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop11/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[10], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC15_tdsp_portO_10/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop10/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[9], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC16_tdsp_portO_9/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop09/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[8], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC17_tdsp_portO_8/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop08/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[7], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC18_tdsp_portO_7/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop07/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[6], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC19_tdsp_portO_6/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop06/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[5], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC20_tdsp_portO_5/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop05/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[4], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC21_tdsp_portO_4/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop04/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[3], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC22_tdsp_portO_3/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop03/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[2], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC23_tdsp_portO_2/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop02/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[1], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC24_tdsp_portO_1/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop01/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[0], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC25_tdsp_portO_0/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop00/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[7], driver DTMF_INST/DIGIT_REG_INST/FE_OFC78_tdigitO_7/Y (cell CLKBUFX8) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop7/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[6], driver DTMF_INST/DIGIT_REG_INST/FE_OFC79_tdigitO_6/Y (cell BUFX4) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop6/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[5], driver DTMF_INST/FE_OFC80_tdigitO_5/Y (cell BUFX4) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop5/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[4], driver DTMF_INST/DIGIT_REG_INST/FE_OFC81_tdigitO_4/Y (cell CLKBUFX8) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop4/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (EMS-27):	Message (IMPMSMV-1810) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Total number of fetched objects 6245
+Total number of fetched objects 6245
+End delay calculation. (MEM=1942.34 CPU=0:00:01.6 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=1905.73 CPU=0:00:02.6 REAL=0:00:03.0)
+**WARN: (SDF-802):	The sum of the Setup and Hold sides of the SETUPHOLD check on pin DTMF_INST/SPI_INST/spi_sr_reg_2/SI is negative - which is illegal in SDF V3.0. The negative side of the SETUPHOLD will be postively adjusted so that the resulting sum is zero. This will result in a more conservative analysis of the adjusted check.  Negative SETUPHOLD sums maybe an indication of a characterization problem in your timing libraries. You can set the timing global timing_write_sdf_allow_negative_setuphold_sum to 'true' to loosen this restriction.
+**WARN: (SDF-802):	The sum of the Setup and Hold sides of the SETUPHOLD check on pin DTMF_INST/SPI_INST/dout_reg_0/SI is negative - which is illegal in SDF V3.0. The negative side of the SETUPHOLD will be postively adjusted so that the resulting sum is zero. This will result in a more conservative analysis of the adjusted check.  Negative SETUPHOLD sums maybe an indication of a characterization problem in your timing libraries. You can set the timing global timing_write_sdf_allow_negative_setuphold_sum to 'true' to loosen this restriction.
+**WARN: (SDF-802):	The sum of the Setup and Hold sides of the SETUPHOLD check on pin DTMF_INST/TDSP_CORE_INST/EXECUTE_INST/ar0_reg_10/SI is negative - which is illegal in SDF V3.0. The negative side of the SETUPHOLD will be postively adjusted so that the resulting sum is zero. This will result in a more conservative analysis of the adjusted check.  Negative SETUPHOLD sums maybe an indication of a characterization problem in your timing libraries. You can set the timing global timing_write_sdf_allow_negative_setuphold_sum to 'true' to loosen this restriction.
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix DTMF_CHIP_preCTS -outDir timingReports
+*** timeDesign #1 [begin] : totSession cpu/real = 0:00:35.7/0:02:49.8 (0.2), mem = 1896.1M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1832.1M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
 #################################################################################
 # Design Stage: PreRoute
 # Design Name: DTMF_CHIP
@@ -1137,1200 +1339,549 @@ AAE DB initialization (MEM=1732.83 CPU=0:00:00.0 REAL=0:00:00.0)
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in BcWc mode...
-Start delay calculation (fullDC) (1 T). (MEM=1753.18)
-AAE_INFO: Cdb files are: 
- 	../CDB/slow.cdb
-	/home/shadab/PhysicalDesign-RAKs/Genus/ff_rak_testcase/lib/gsclib045_svt_v4.4/gsclib045/celtic/fast.cdb
- 
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
-Type 'man IMPESI-3311' for more detail.
-**WARN: (EMS-27):	Message (IMPESI-3311) has exceeded the current message display limit of 20.
-To increase the message display limit, refer to the product command reference manual.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[15], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9602/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop15/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Start delay calculation (fullDC) (1 T). (MEM=1852.95)
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[15], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC10_tdsp_portO_15/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop15/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[14], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9605/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop14/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[14], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC11_tdsp_portO_14/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop14/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[13], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9608/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop13/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[13], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC12_tdsp_portO_13/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop13/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[12], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9611/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop12/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[12], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC13_tdsp_portO_12/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop12/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[11], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9614/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop11/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[11], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC14_tdsp_portO_11/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop11/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[10], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9617/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop10/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[10], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC15_tdsp_portO_10/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop10/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[9], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9620/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop09/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[9], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC16_tdsp_portO_9/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop09/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[8], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9623/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop08/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[8], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC17_tdsp_portO_8/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop08/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[7], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9753/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop07/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[7], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC18_tdsp_portO_7/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop07/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[6], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9756/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop06/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[6], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC19_tdsp_portO_6/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop06/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[5], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9759/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop05/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[5], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC20_tdsp_portO_5/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop05/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[4], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9762/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop04/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[4], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC21_tdsp_portO_4/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop04/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[3], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9765/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop03/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[3], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC22_tdsp_portO_3/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop03/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[2], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9768/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop02/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[2], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC23_tdsp_portO_2/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop02/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[1], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9644/Y (cell INVXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop01/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[1], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC24_tdsp_portO_1/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop01/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdsp_portO[0], driver DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_9504/Y (cell CLKBUFXL) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop00/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[0], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC25_tdsp_portO_0/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop00/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdigitO[7], driver DTMF_INST/DIGIT_REG_INST/digit_out_reg_7/Q (cell SDFFSHQX1) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop7/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdigitO[7], driver DTMF_INST/DIGIT_REG_INST/FE_OFC78_tdigitO_7/Y (cell CLKBUFX8) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop7/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdigitO[6], driver DTMF_INST/DIGIT_REG_INST/digit_out_reg_6/Q (cell SDFFSHQX1) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop6/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdigitO[6], driver DTMF_INST/DIGIT_REG_INST/FE_OFC79_tdigitO_6/Y (cell BUFX4) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop6/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdigitO[5], driver DTMF_INST/DIGIT_REG_INST/digit_out_reg_5/Q (cell SDFFSHQX1) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop5/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdigitO[5], driver DTMF_INST/FE_OFC80_tdigitO_5/Y (cell BUFX4) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop5/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
-**WARN: (IMPMSMV-1810):	Net tdigitO[4], driver DTMF_INST/DIGIT_REG_INST/digit_out_reg_4/Q (cell SDFFSHQX1) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop4/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+**WARN: (IMPMSMV-1810):	Net tdigitO[4], driver DTMF_INST/DIGIT_REG_INST/FE_OFC81_tdigitO_4/Y (cell CLKBUFX8) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop4/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
 Type 'man IMPMSMV-1810' for more detail.
 **WARN: (EMS-27):	Message (IMPMSMV-1810) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
-**WARN: (IMPESI-3086):	The cell 'PDIDGZ' does not have characterized noise model(s) for 'tpz973g' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'PDIDGZ' does not have characterized noise model(s) for 'tpz973g' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'pllclk' does not have characterized noise model(s) for 'pllclk' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'pllclk' does not have characterized noise model(s) for 'pllclk' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'CLKBUFXL' does not have characterized noise model(s) for 'tsmc18' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'SDFFNX1' does not have characterized noise model(s) for 'tsmc18' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'SDFFNRX1' does not have characterized noise model(s) for 'tsmc18' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'SDFFNXL' does not have characterized noise model(s) for 'tsmc18' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'PDO04CDG' does not have characterized noise model(s) for 'tpz973g' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'PDO04CDG' does not have characterized noise model(s) for 'tpz973g' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'rom_512x16A' does not have characterized noise model(s) for 'rom_512x16A' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'rom_512x16A' does not have characterized noise model(s) for 'rom_512x16A' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'BUFX1' does not have characterized noise model(s) for 'tsmc18' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'BUFXL' does not have characterized noise model(s) for 'tsmc18' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'ram_128x16A' does not have characterized noise model(s) for 'ram_128x16A' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'ram_128x16A' does not have characterized noise model(s) for 'ram_128x16A' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'ram_256x16A' does not have characterized noise model(s) for 'ram_256x16A' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-**WARN: (IMPESI-3086):	The cell 'ram_256x16A' does not have characterized noise model(s) for 'ram_256x16A' lib(s). Missing noise information could compromise the accuracy of analysis.
-Type 'man IMPESI-3086' for more detail.
-Total number of fetched objects 6519
-End delay calculation. (MEM=1917.18 CPU=0:00:00.6 REAL=0:00:02.0)
-End delay calculation (fullDC). (MEM=1880.56 CPU=0:00:01.5 REAL=0:00:06.0)
-
-Begin Power Analysis
-
-             0V	    VSS
-          1.62V	    VDD
-
-Begin Processing Timing Library for Power Calculation
-
-Begin Processing Timing Library for Power Calculation
-
-
-
-Begin Processing Power Net/Grid for Power Calculation
-
-Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1190.33MB/3380.97MB/1190.88MB)
-
-Begin Processing Timing Window Data for Power Calculation
-
-vclk1(142.857MHz) vclk2(71.4286MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1190.82MB/3380.97MB/1190.88MB)
-
-Begin Processing User Attributes
-
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1190.91MB/3380.97MB/1190.91MB)
-
-Begin Processing Signal Activity
-
-
-Starting Levelizing
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT)
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 10%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 20%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 30%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 40%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 50%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 60%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 70%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 80%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 90%
-
-Finished Levelizing
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT)
-
-Starting Activity Propagation
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT)
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 10%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 20%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 30%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 40%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 50%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 60%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 70%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 80%
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT): 90%
-
-Finished Activity Propagation
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT)
-Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1191.89MB/3380.97MB/1191.89MB)
-
-Begin Power Computation
-
-      ----------------------------------------------------------
-      # of cell(s) missing both power/leakage table: 0
-      # of cell(s) missing power table: 3
-      # of cell(s) missing leakage table: 4
-      ----------------------------------------------------------
-CellName                                  Missing Table(s)
-PDIDGZ                                    leakage power, 
-PDO04CDG                                  leakage power, 
-PVDD1DGZ                                  internal power, leakage power, 
-PVSS1DGZ                                  internal power, leakage power, 
-pllclk                                    internal power, 
-
-
-
-Starting Calculating power
-2025-Nov-20 16:18:08 (2025-Nov-20 10:48:08 GMT)
- ... Calculating switching power
-  instance IOPADS_INST/Ptdigop7 is not connected to any rail
-  instance IOPADS_INST/Ptdigop6 is not connected to any rail
-  instance IOPADS_INST/Ptdigop5 is not connected to any rail
-  instance IOPADS_INST/Ptdigop4 is not connected to any rail
-  instance IOPADS_INST/Ptdigop3 is not connected to any rail
-  only first five unconnected instances are listed...
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 10%
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 20%
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 30%
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 40%
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 50%
- ... Calculating internal and leakage power
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 60%
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 70%
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 80%
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT): 90%
-
-Finished Calculating power
-2025-Nov-20 16:18:09 (2025-Nov-20 10:48:09 GMT)
-      # of MSMV cell(s) missing power_level: 0
-Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1193.21MB/3388.97MB/1193.21MB)
-
-Begin Processing User Attributes
-
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1193.21MB/3388.97MB/1193.28MB)
-
-Ended Power Analysis: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=1193.28MB/3388.97MB/1193.30MB)
-
-Begin Boundary Leakage Calculation
-Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
-mem(process/total/peak)=1193.30MB/3388.97MB/1193.30MB)
-Begin Static Power Report Generation
-  16 instances have no static power
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Ptestmdip (PDIDGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pscanenip (PDIDGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pcornerlr (PCORNERDG) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pcornerll (PCORNERDG) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pcornerur (PCORNERDG) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pcornerul (PCORNERDG) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pavss0 (PVSS1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pavdd0 (PVDD1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvdd3 (PVDD1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvdd2 (PVDD1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvdd1 (PVDD1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvdd0 (PVDD1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvss3 (PVSS1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvss2 (PVSS1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvss1 (PVSS1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-** WARN:  (VOLTUS_POWR-2152): Instance IOPADS_INST/Pvss0 (PVSS1DGZ) has no static power. This might be because either the duty cycle and activity of all the connected nets
-is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
-to power on rails and that the duty cycle and activity of at least one net is not 0.
-
-*
-
-
-
-Total Power
------------------------------------------------------------------------------------------
-Total Internal Power:      103.10236927 	   97.8442%
-Total Switching Power:       2.26732470 	    2.1517%
-Total Leakage Power:         0.00434797 	    0.0041%
-Total Power:               105.37404194
------------------------------------------------------------------------------------------
-** WARN:  (VOLTUS_POWR-2041): There are some instances in the design which are not connected to any power or ground nets.
-These instances will be added to default power/ground rail uti files.
-Use 'itaputil list <uti-file>' command to get the list of instances.
-
-** WARN:  (VOLTUS_POWR-3424): Cell SDFFRHQX1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell AOI22X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell XOR2X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell PVDD1DGZ has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell OAI211X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell AOI33X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell BUFX2 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell OAI2BB1X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell INVX1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell ADDHX1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell NOR4X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell OR3XL has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell AOI222X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell ram_128x16A has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell AOI21X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell NAND3XL has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell AOI31X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell OAI32X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell BUFX1 has no power pin defined in LEF/PGV.
-
-** WARN:  (VOLTUS_POWR-3424): Cell NAND3X1 has no power pin defined in LEF/PGV.
-
-** WARN:  (EMS-27): Message (VOLTUS_POWR-3424) has exceeded the current message display limit of 20.
+Total number of fetched objects 6245
+End delay calculation. (MEM=1916.68 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1916.68 CPU=0:00:00.9 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:01.0 real=0:00:01.0 totSessionCpu=0:00:37.1 mem=1916.7M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ dtmf_view_setup 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.039  |  2.711  |  0.039  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   228   |   219   |    9    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      3 (3)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |    134 (134)     |    -56     |    136 (136)     |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 48.590%
+Routing Overflow: 0.15% H and 0.14% V
+------------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.78 sec
+Total Real time: 4.0 sec
+Total Memory Usage: 1895.097656 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:01.7/0:00:03.3 (0.5), totSession cpu/real = 0:00:37.5/0:02:53.1 (0.2), mem = 1895.1M
+<CMD> set_analysis_view -setup dtmf_view_setup -hold dtmf_view_hold
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File /home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/t018s6mlv.capTbl ...
+Cap table was created using Encounter 10.10-s002_1.
+Process name: t018s6mm.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: dtmf_view_setup
+    RC-Corner Name        : dtmf_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/t018s6mlv.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/dtmf_rc_corner/t018s6mm.tch'
+ 
+ Analysis View: dtmf_view_hold
+    RC-Corner Name        : dtmf_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/t018s6mlv.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/dtmf_rc_corner/t018s6mm.tch'
+set_analysis_view/update_rc_corner called to change MMMC setup. RC Corner setup information has remained the same. Therefore, parasitic data in the tool brought as per the previous MMMC setup is being maintained.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Reading timing constraints file '/tmp/innovus_temp_27917_ra01_shadab_tK5nZx/.mmmcn0TJs0/modes/common/common.sdc' ...
+Current (total cpu=0:00:44.9, real=0:04:02, peak res=1373.6M, current mem=1281.7M)
+DTMF_CHIP
+Number of path exceptions in the constraint file = 5
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1349.8M, current mem=1349.8M)
+Current (total cpu=0:00:45.0, real=0:04:02, peak res=1373.6M, current mem=1349.8M)
+Reading latency file '/tmp/innovus_temp_27917_ra01_shadab_tK5nZx/.mmmcn0TJs0/views/dtmf_view_setup/latency.sdc' ...
+Reading latency file '/tmp/innovus_temp_27917_ra01_shadab_tK5nZx/.mmmcn0TJs0/views/dtmf_view_hold/latency.sdc' ...
+Total number of combinational cells: 266
+Total number of sequential cells: 178
+Total number of tristate cells: 18
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX1 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFXL CLKBUFX2 CLKBUFX1 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX8 CLKBUFXL
+Total number of usable buffers: 18
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX2 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX8 CLKINVXL INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVXL INVX4 INVX8
+Total number of usable inverters: 18
+List of unusable inverters: RFRDX2 RFRDX1 RFRDX4
+Total number of unusable inverters: 3
+List of identified usable delay cells: DLY2X1 DLY1X1 DLY4X1 DLY3X1
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+<CMD> timeDesign -preCTS
+AAE DB initialization (MEM=1889.22 CPU=0:00:00.0 REAL=0:00:00.0) 
+*** timeDesign #2 [begin] : totSession cpu/real = 0:00:46.1/0:04:06.0 (0.2), mem = 1889.2M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1888.2M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: DTMF_CHIP
+# Design Mode: 180nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1912.58)
+AAE_INFO: Cdb files are: 
+ 	/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/slow.cdb
+	/home/shadab/shadab/FPR/work/pr.inn.dat/libs/mmmc/fast.cdb
+ 
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin QN of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin R of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin S of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPESI-3311):	Pin Q of Cell RSLATXL for timing library tsmc18 has different voltage for the vivo between CDB(1.62) and timing library(1.98). This vivo will be ignored.
+Type 'man IMPESI-3311' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[15], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC10_tdsp_portO_15/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop15/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[14], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC11_tdsp_portO_14/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop14/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[13], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC12_tdsp_portO_13/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop13/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[12], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC13_tdsp_portO_12/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop12/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[11], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC14_tdsp_portO_11/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop11/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[10], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC15_tdsp_portO_10/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop10/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[9], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC16_tdsp_portO_9/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop09/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[8], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC17_tdsp_portO_8/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop08/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[7], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC18_tdsp_portO_7/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop07/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[6], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC19_tdsp_portO_6/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop06/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[5], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC20_tdsp_portO_5/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop05/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[4], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC21_tdsp_portO_4/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop04/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[3], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC22_tdsp_portO_3/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop03/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[2], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC23_tdsp_portO_2/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop02/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[1], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC24_tdsp_portO_1/Y (cell CLKBUFX2) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop01/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[0], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC25_tdsp_portO_0/Y (cell CLKBUFX3) voltage 1.62 does not match receiver IOPADS_INST/Ptdspop00/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[7], driver DTMF_INST/DIGIT_REG_INST/FE_OFC78_tdigitO_7/Y (cell CLKBUFX8) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop7/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[6], driver DTMF_INST/DIGIT_REG_INST/FE_OFC79_tdigitO_6/Y (cell BUFX4) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop6/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[5], driver DTMF_INST/FE_OFC80_tdigitO_5/Y (cell BUFX4) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop5/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[4], driver DTMF_INST/DIGIT_REG_INST/FE_OFC81_tdigitO_4/Y (cell CLKBUFX8) voltage 1.62 does not match receiver IOPADS_INST/Ptdigop4/I (cell PDO04CDG) voltage 3 for view dtmf_view_setup.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (EMS-27):	Message (IMPMSMV-1810) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
-
-Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
-mem(process/total/peak)=1193.45MB/3388.97MB/1193.50MB)
-
-Begin Creating Binary Database
-Ended Creating Binary Database: (cpu=0:00:01, real=0:00:24,
-mem(process/total/peak)=1672.94MB/4159.39MB/1673.24MB)
-
-Output file is ./run1/DTMF_CHIP.rpt.
-<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst *
-<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst *
-<CMD> globalNetConnect VDD -type tiehi
-<CMD> globalNetConnect VSS -type tielo
-<CMD> globalNetConnect VDD -type tiehi -pin VDD -inst *
-<CMD> globalNetConnect VSS -type tielo -pin VSS -inst *
-dtmf_view_hold dtmf_view_setup
-<CMD> set_rail_analysis_mode -method era_static -power_switch_eco false -generate_movies false -save_voltage_waveforms false -accuracy xd -analysis_view dtmf_view_setup -process_techgen_em_rules false -enable_rlrp_analysis false -extraction_tech_file ../QRC/t018s6mm.tch -vsrc_search_distance 50 -ignore_shorts false -enable_manufacturing_effects false -report_via_current_direction false
-dtmf_view_hold dtmf_view_setup
-dtmf_view_hold dtmf_view_setup
-**WARN: (VOLTUS-1179):	Settings of all PG nets have been reset to default due to change in the analysis view using set_rail_analysis_mode. Re-run set_pg_nets to set threshold values based on design requirements.
-<CMD> setDrawView place
-**ERROR: (VOLTUS_ERA-2491):	Must specify the net name.
-<CMD> create_power_pads -net VDD -auto_fetch
-<CMD> setDrawView place
-<CMD> create_power_pads -net VDD -vsrc_file dtmf.pp
-Saving DC sources to file dtmf.pp.
-<CMD> set_pg_nets -net VDD -voltage 0.9 -threshold 0.81
-<CMD> set_power_data -reset
-<CMD> set_power_data -format current -scale 1 run1/static_VDD.ptiavg
-<CMD> set_power_pads -reset
-<CMD> set_power_pads -net VDD -format xy -file dtmf.pp
-<CMD> set_package -reset
-<CMD> set_package -spice {} -mapping {}
-<CMD> set_net_group -reset
-<CMD> set_advanced_rail_options -reset
-<CMD> analyze_rail -type net -results_directory ./run1 VDD
-Started PGV Library Generator at 16:23:30 11/20/2025
-
-** INFO:  (VOLTUS_LGEN-3599): Library generation settings: 
-	Mode: TECH 
-	Capacitance: area_cap 
-	Current Distribution: estimation 
-	Grid Port Definition: LEF 
-	Grid Current Sinks: LEF pin 
-	Power Gate: no
-
-** INFO:  (VOLTUS_LGEN-3598): Processing LEF files: 
-/home/shadab/shadab/FPR/lef/all.lef
-
-** INFO:  (VOLTUS_LGEN-3611): No lef leyarmap specified. Tool has
-internally generated the mapping between technology layers and lef layers
-using information in technology file and technology lef. To specify your
-own layer mapping, use set_pg_library_mode -lef_layermap.
-
-  TECH-LAYER    LEF-LAYER
-  METAL_1    Metal1
-  VIA_1    Via12
-  METAL_2    Metal2
-  VIA_2    Via23
-  METAL_3    Metal3
-  VIA_3    Via34
-  METAL_4    Metal4
-  VIA_4    Via45
-  METAL_5    Metal5
-  VIA_5    Via56
-  METAL_6    Metal6
-
-
-** WARN:  (VOLTUS_LGEN-3106): The following cells do not contain any supply
-pins: , PDO04CDG, PDB04DGZ, PDIDGZ
-
-** INFO:  (VOLTUS_LGEN-3606): 
-Power Grid View Generation Statistics:
-        # Total number of cells: 488 
-        # TECH view created: 479 (98%)
-
-** WARN:  (VOLTUS_LGEN-3971): The following cells failed to create some of
-the PGV views:
- CELL                      				 REASON                    
- ==== 							 ====== 
- PCORNERDG                 				 No PowerPin found in LEF.
- 
- PDB04DGZ                  				 No PowerPin found in LEF.
- 
- PDIDGZ                    				 No PowerPin found in LEF.
- 
- PDO04CDG                  				 No PowerPin found in LEF.
- 
- PFEED01                   				 No PowerPin found in LEF.
- 
- PFEED1                    				 No PowerPin found in LEF.
- 
- PFEED10                   				 No PowerPin found in LEF.
- 
- PFEED2                    				 No PowerPin found in LEF.
- 
- PFEED20                   				 No PowerPin found in LEF.
- 
- PFEED35                   				 No PowerPin found in LEF.
- 
- PFEED5                    				 No PowerPin found in LEF.
- 
- PFEED50                   				 No PowerPin found in LEF.
- 
- PVDD1DGZ                  				 No GroundPin found in LEF.
- 
- PVSS1DGZ                  				 No PowerPin found in LEF.
- 
-
-Finished PGV Library Generator at 16:23:38 11/20/2025 (cpu=0:00:01, real=0:00:08, peak mem=1219.48MB)
-Current Innovus resource usage: (total cpu=0:00:48, real=0:09:15, mem=1219.48MB)
-
-Begin ERA Data Preparation
-All Virtual Vias and Virtual followpins have been skipped. No incremental def would be generated.
-Ended ERA Data Preparation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1195.55MB/3385.58MB/1688.57MB)
-
-* voltus_rail
-*	Version v21.15-s076_1 (09/23/2022 08:39:08)
-*	Copyright 2007 - 2017 Cadence Design Systems, Inc.
-*
-*	Run by shadab on Thu Nov 20 16:23:42 2025
-
-*	Executing 64 bit version on host: ra01
-*
-
-
-Started Rail Analysis at 16:23:40 11/20/2025
-
-
-Multi-CPU Configuration:
-	#CPU: 1
-	Mode: local
-	Host: ra01
-
-Analyze Rail Settings:
-	Temp directory: /tmp/innovus_temp_24931_ra01_shadab_wNNusj
-	Output directory: ./run1
-	Run directory: ./run1/VDD_25C_avg_1
-
-
-
-Running R  extraction for /tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz ...
-
-Invoking: "/home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler   -nt 1   -usecellid  -session_file ./work/sfe.session    -cmd ./work/voltus_scheduler.cmd" ...
-Extraction option setup as:
-setenv gray_data NONE
-setenv enable_cluster_overhang_via false
-setenv enable_dfm_mask_conflict_shape false
-Begin Preparing Data for Parasitic Extraction
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/i_10048
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_10074
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_14
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_13
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_12
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_11
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_10
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_9
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_8
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_7
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_6
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_5
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_4
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_3
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_2
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_1
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_0
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_15
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/SPI_INST/i_10639
-** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/SPI_INST/i_10638
-Extracting following DFM effects:
-MetalFill        : n/a
-WEE Effects      : n/a
-Erosion Effects  : n/a
-T/B Enlargements : n/a
-R(w) Effects     : n/a
-R(w,s) Effects   : n/a
-R(sw,st) Effects : n/a
-TC(w) Effects    : n/a
-Some effects indicate n/a because of non-availability of relevant input data (or) requested to be off.
-Ended Preparing Data for Parasitic Extraction: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=19.10MB/4576.49MB/1765.73MB)
-
-Invoking: "/home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler -skip_prep -nt 1 -usecellid -session_file ./work/sfe.session -cmd ./work/voltus_scheduler.cmd -zx /home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_extractor" ...
-Extraction option setup as:
-setenv gray_data NONE
-setenv enable_cluster_overhang_via false
-setenv enable_dfm_mask_conflict_shape false
-Begin Parasitic Extraction
-Extracting Progress:
-    0% at 16:23:43 11/20/2025
-  100% at 16:23:49 11/20/2025
-Ended Parasitic Extraction: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=7.01MB/3785.07MB/1765.73MB)
-
-Invoking: "/home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_rail_smg -cmd ./run1/voltus_rail_smg.VDD.cmd -l ./run1/voltus_rail_smg.VDD.log" ...
-Begin Merging power grid
-Tech reference temperature: 25
-Target temperature: 25
-
-Grid Statistics of Net VDD:
-- NODE
-  Total node: 1760
-    Top Level grid node: 1704
-      Top level interface node: 146
-    Missing interface node: 56
-    Cell internal node: 0
-- ELEM
-  Total element: 1927
-    Top Level grid element: 1927
-    Cell internal element: 0
-- INST
-  Instance logically connected: 9
-    Tech: 9
-    StdCell: 0
-    Macro:
-      Early: 0
-      IR: 0
-      EM: 0
-    Current Region:  0
-  Dropped instance due to missing/incomplete cell library: 0
-- TAP
-  Total tap: 202
-
-Ended Merging power grid: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=17.85MB/3839.89MB/1765.73MB)
-
-Begin Preparing Data for Rail Analysis
-  Power Pin Location File: /home/shadab/shadab/FPR/work/dtmf.pp
-  # Voltage Source Added/Total (%): 30/30 (100.00%)
-
-  Power Database: run1/static_VDD.ptiavg
-  # Current Taps Matched/Total (%): 4/5910 (0.07%)
-  # Instances Matched: 4
-Ended Preparing Data for Rail Analysis: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=57.75MB/4494.77MB/1765.73MB)
-
-
-Begin PowerGrid Integrity Analysis
-Ended PowerGrid Integrity Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=57.75MB/4494.77MB/1765.73MB)
-
-
-Begin Steady-State Analysis
-Ended Steady-State Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=62.32MB/4533.56MB/1765.73MB)
-
-
-Begin Report Generation
-
-
-Net VDD:
-
-
-Begin Preparing Database for Report Generation
-
-Circuit profile:
-                                                      Current    Voltage
-Layer Name                       Nodes   Resistors    Sources    Sources
------ --------------------  ----------  ----------  ---------  ---------
-0     METAL_6                      302         271          5          5
-1     VIA_5                          0         287          0          0
-2     METAL_5                      393         153         76          5
-3     VIA_4                          0         248          0          0
-4     METAL_4                      283           0         35          5
-5     VIA_3                          0         248          0          0
-6     METAL_3                      328          94         76          5
-7     VIA_2                          0         222          0          0
-8     METAL_2                      227           0          5          5
-9     VIA_1                          0         222          0          0
-10    METAL_1                      227         182          5          5
-                            ----------  ----------  ---------  ---------
-11    Circuit total               1761        1927        202         30
-
-Note: 83 current sources are disconnected.
-Ended Preparing Database for Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=333.98MB/4790.77MB/1765.73MB)
-
-Initializing Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=334.14MB/4790.77MB/1765.73MB)
-
-Begin IR Drop (Linear) Report Generation
-  Voltage: 0.9
-  Threshold: 0.81
-  Minimum, Average, Maximum IR Drop: 0.853V, 0.879V, 0.900V
-    Range 1(    0.853V  -      0.859V ):       158 (  9.71%)
-    Range 2(    0.859V  -      0.864V ):       123 (  7.56%)
-    Range 3(    0.864V  -      0.870V ):       112 (  6.88%)
-    Range 4(    0.870V  -      0.876V ):       233 ( 14.32%)
-    Range 5(    0.876V  -      0.882V ):       120 (  7.38%)
-    Range 6(    0.882V  -      0.888V ):       505 ( 31.04%)
-    Range 7(    0.888V  -      0.894V ):       236 ( 14.51%)
-    Range 8(    0.894V  -      0.900V ):       140 (  8.60%)
-*** Note : 133 disconnected nodes are excluded from the report.
-    Layer with maximum IR Drop:  METAL_3
-      METAL_6: 0.045358 [0.85464 - 0.9]
-      METAL_5: 0.047173 [0.85283 - 0.9]
-      METAL_4: 0.045531 [0.85447 - 0.9]
-      METAL_3: 0.047372 [0.85263 - 0.9]
-      METAL_2: 0.044402 [0.8556 - 0.9]
-      METAL_1: 0.044312 [0.85569 - 0.9]
-  IR Report: ./run1/VDD_25C_avg_1/Reports/VDD/VDD.main.rpt
-  GIF plot: ./run1/VDD_25C_avg_1/Reports/VDD/ir_linear.gif
-Ended IR Drop (Linear) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=370.83MB/4790.77MB/1765.73MB)
-
-
-Begin IR Drop (Limit) Report Generation
-  Voltage: 0.9
-  Threshold: 0.81
-  Minimum, Average, Maximum IR Drop: 0.853V, 0.879V, 0.900V
-    Range 1(    0.810V  -      0.810V ):         0 (  0.00%)
-    Range 2(    0.810V  -      0.818V ):         0 (  0.00%)
-    Range 3(    0.818V  -      0.825V ):         0 (  0.00%)
-    Range 4(    0.825V  -      0.832V ):         0 (  0.00%)
-    Range 5(    0.832V  -      0.840V ):         0 (  0.00%)
-    Range 6(    0.840V  -      0.847V ):         0 (  0.00%)
-    Range 7(    0.847V  -      0.855V ):        14 (  0.86%)
-    Range 8(    0.855V  -      0.900V ):      1613 ( 99.14%)
-*** Note : 133 disconnected nodes are excluded from the report.
-    Layer with maximum IR Drop:  METAL_3
-      METAL_6: 0.045358 [0.85464 - 0.9]
-      METAL_5: 0.047173 [0.85283 - 0.9]
-      METAL_4: 0.045531 [0.85447 - 0.9]
-      METAL_3: 0.047372 [0.85263 - 0.9]
-      METAL_2: 0.044402 [0.8556 - 0.9]
-      METAL_1: 0.044312 [0.85569 - 0.9]
-  IR Report: ./run1/VDD_25C_avg_1/Reports/VDD/VDD.main.rpt
-  GIF plot: ./run1/VDD_25C_avg_1/Reports/VDD/ir_limit.gif
-Ended IR Drop (Limit) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=373.19MB/4790.77MB/1765.73MB)
-
-
-Begin Tap Current Report Generation
-  Minimum, Average, Maximum Tap Current: 0.000A, 0.360mA, 0.935mA
-  Total Current: 42.846mA
-    Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
-    Range 2( 100.000uA  -     1.000mA ):        88 ( 73.95%)
-    Range 3(  10.000uA  -   100.000uA ):         0 (  0.00%)
-    Range 4(   1.000uA  -    10.000uA ):         1 (  0.84%)
-    Range 5( 100.000nA  -     1.000uA ):         0 (  0.00%)
-    Range 6(  10.000nA  -   100.000nA ):         0 (  0.00%)
-    Range 7(   1.000nA  -    10.000nA ):         0 (  0.00%)
-    Range 8(    0.000A  -     1.000nA ):        30 ( 25.21%)
-*** Note: 83 disconnected taps (0.000A) are excluded from the report.
-  GIF plot: ./run1/VDD_25C_avg_1/Reports/VDD/tc.gif
-Ended Tap Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=373.31MB/4790.77MB/1765.73MB)
-
-
-Begin Instance Based IR Drop Report Generation
-  Minimum, Average, Maximum Instance Based IR Drop: 0.853V, 0.879V, 0.900V
-    Range 1(    0.810V  -      0.810V ):         0 (  0.00%)
-    Range 2(    0.810V  -      0.817V ):         0 (  0.00%)
-    Range 3(    0.817V  -      0.825V ):         0 (  0.00%)
-    Range 4(    0.825V  -      0.832V ):         0 (  0.00%)
-    Range 5(    0.832V  -      0.840V ):         0 (  0.00%)
-    Range 6(    0.840V  -      0.847V ):         0 (  0.00%)
-    Range 7(    0.847V  -      0.855V ):         9 (  7.56%)
-    Range 8(    0.855V  -      0.900V ):       110 ( 92.44%)
-*** Note : 83 disconnected nodes are excluded from the report.
-  GIF plot: ./run1/VDD_25C_avg_1/Reports/VDD/iv.gif
-Ended Instance Based IR Drop Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=373.68MB/4790.77MB/1765.73MB)
-
-
-Begin Voltage Source Current Report Generation
-  Minimum, Average, Maximum Voltage Source Current: -21.501mA, -1.428mA, 0.000A
-  Total Current: -42.846mA
-    Range 1( -21.503mA  -   -18.813mA ):         1 (  3.33%)
-    Range 2( -18.813mA  -   -16.126mA ):         0 (  0.00%)
-    Range 3( -16.126mA  -   -13.438mA ):         0 (  0.00%)
-    Range 4( -13.438mA  -   -10.750mA ):         1 (  3.33%)
-    Range 5( -10.750mA  -    -8.063mA ):         0 (  0.00%)
-    Range 6(  -8.063mA  -    -5.375mA ):         1 (  3.33%)
-    Range 7(  -5.375mA  -    -2.688mA ):         0 (  0.00%)
-    Range 8(  -2.688mA  -      0.000A ):        27 ( 90.00%)
-  GIF plot: ./run1/VDD_25C_avg_1/Reports/VDD/vc.gif
-Ended Voltage Source Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=374.79MB/4790.77MB/1765.73MB)
-
-
-Begin Resistor Current Report Generation
-  Minimum, Average, Maximum Resistor Current: 0.000A, 0.982mA, 21.500mA
-    Range 1(   1.000mA  -     1.000GA ):       373 ( 20.56%)
-    Range 2( 100.000uA  -     1.000mA ):      1255 ( 69.18%)
-    Range 3(  10.000uA  -   100.000uA ):       142 (  7.83%)
-    Range 4(   1.000uA  -    10.000uA ):        34 (  1.87%)
-    Range 5(   0.100uA  -     1.000uA ):         4 (  0.22%)
-    Range 6(  10.000nA  -     0.100uA ):         0 (  0.00%)
-    Range 7(   1.000nA  -    10.000nA ):         0 (  0.00%)
-    Range 8(    0.000A  -     1.000nA ):         6 (  0.33%)
-*** Note : 113 disconnected resistors are excluded from the report.
-  GIF plot: ./run1/VDD_25C_avg_1/Reports/VDD/rc.gif
-Ended Resistor Current Report Generation: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=459.83MB/4790.77MB/1765.73MB)
-
-
-Begin Resistor Voltage Report Generation
-  Minimum, Average, Maximum Resistor Voltage: 0.000V, 0.586mV, 22.744mV
-    Range 1(  19.901mV  -    22.746mV ):         1 (  0.06%)
-    Range 2(  17.058mV  -    19.901mV ):         0 (  0.00%)
-    Range 3(  14.215mV  -    17.058mV ):         0 (  0.00%)
-    Range 4(  11.372mV  -    14.215mV ):         0 (  0.00%)
-    Range 5(   8.529mV  -    11.372mV ):         6 (  0.33%)
-    Range 6(   5.686mV  -     8.529mV ):        24 (  1.32%)
-    Range 7(   2.843mV  -     5.686mV ):       118 (  6.50%)
-    Range 8(    0.000V  -     2.843mV ):      1665 ( 91.79%)
-*** Note : 113 disconnected resistors are excluded from the report.
-  GIF plot: ./run1/VDD_25C_avg_1/Reports/VDD/rv.gif
-Ended Resistor Voltage Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=462.21MB/4790.77MB/1765.73MB)
-
-
-Begin Power Gate I/Idsat Report Generation
-  No data found.
-Ended Power Gate I/Idsat Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=462.22MB/4790.77MB/1765.73MB)
-
-
-Begin Power Gate Voltage Report Generation
-  No data found.
-Ended Power Gate Voltage Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=462.25MB/4790.77MB/1765.73MB)
-
-
-Begin Voltage Across Vias and Contacts Report Generation
-Ended Voltage Across Vias and Contacts Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=462.27MB/4790.77MB/1765.73MB)
-
-
-Begin Weak Grid Connectivity Report
-Ended Weak Grid Connectivity Report: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=462.30MB/4790.77MB/1765.73MB)
-
-
-Begin Grid Integrity Report Generation
-  # Missing Cell Power-Grid Views: 0
-  # Physically Disconnected Instances: 0
-  # Instances with Floating Power Pins: 0
-  # Disconnected Wire Segments: 32
-  # Weakly Connected Metal Segments: 31
-  # Dropped Voltage Sources: 0
-Ended Grid Integrity Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=462.38MB/4790.77MB/1765.73MB)
-
-Ended Report Generation: (cpu=0:00:04, real=0:00:05, mem(process/total/peak)=462.43MB/4790.77MB/1765.73MB)
-
-
-Rail Analysis Statistics:
-Warning messages:      0
-Error messages:        0
-
-Rail Analysis completed successfully.
-
-Finished Rail Analysis at 16:23:56 11/20/2025 (cpu=0:00:07, real=0:00:16, peak mem=1765.73MB)
-Current Innovus resource usage: (total cpu=0:00:53, real=0:09:33, mem=1658.77MB)
-<CMD> setLayerPreference powerNet -color {#0000FF #0010DE #0020BD #00319C #00417B #00525A #006239 #007318 #088300 #299400 #4AA400 #6AB400 #8BC500 #ACD500 #CDE600 #EEF600 #FFF900 #FFED00 #FFE200 #FFD600 #FFCB00 #FFBF00 #FFB400 #FFA800 #FF9500 #FF8000 #FF6A00 #FF5500 #FF4000 #FF2A00 #FF1500 #FF0000}
-<CMD> set_power_rail_display -plot none
-<CMD> setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
-<CMD> set_power_rail_display -enable_voltage_sources 0
-<CMD> set_power_rail_display -enable_percentage_range 0
+Total number of fetched objects 6245
+End delay calculation. (MEM=2033.67 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1997.05 CPU=0:00:01.6 REAL=0:00:02.0)
+*** Done Building Timing Graph (cpu=0:00:01.8 real=0:00:02.0 totSessionCpu=0:00:48.2 mem=1997.1M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ dtmf_view_setup 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.039  |  2.711  |  0.039  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   228   |   219   |    9    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      3 (3)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |    134 (134)     |    -56     |    136 (136)     |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 48.590%
+Routing Overflow: 0.15% H and 0.14% V
+------------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 2.34 sec
+Total Real time: 3.0 sec
+Total Memory Usage: 1978.472656 Mbytes
+*** timeDesign #2 [finish] : cpu/real = 0:00:02.3/0:00:03.1 (0.7), totSession cpu/real = 0:00:48.5/0:04:09.1 (0.2), mem = 1978.5M
+<CMD> timeDesign -preCTS -hold
+*** timeDesign #3 [begin] : totSession cpu/real = 0:00:49.3/0:04:16.5 (0.2), mem = 1978.5M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1954.0M)
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: DTMF_CHIP
+# Design Mode: 180nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1965.02)
+*** Calculating scaling factor for dtmf_libs_min libraries using the default operating condition of each library.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[15], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC10_tdsp_portO_15/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop15/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[14], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC11_tdsp_portO_14/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop14/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[13], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC12_tdsp_portO_13/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop13/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[12], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC13_tdsp_portO_12/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop12/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[11], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC14_tdsp_portO_11/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop11/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[10], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC15_tdsp_portO_10/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop10/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[9], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC16_tdsp_portO_9/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop09/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[8], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC17_tdsp_portO_8/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop08/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[7], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC18_tdsp_portO_7/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop07/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[6], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC19_tdsp_portO_6/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop06/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[5], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC20_tdsp_portO_5/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop05/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[4], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC21_tdsp_portO_4/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop04/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[3], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC22_tdsp_portO_3/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop03/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[2], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC23_tdsp_portO_2/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop02/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[1], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC24_tdsp_portO_1/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop01/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[0], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC25_tdsp_portO_0/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop00/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[7], driver DTMF_INST/DIGIT_REG_INST/FE_OFC78_tdigitO_7/Y (cell CLKBUFX8) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop7/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[6], driver DTMF_INST/DIGIT_REG_INST/FE_OFC79_tdigitO_6/Y (cell BUFX4) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop6/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[5], driver DTMF_INST/FE_OFC80_tdigitO_5/Y (cell BUFX4) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop5/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[4], driver DTMF_INST/DIGIT_REG_INST/FE_OFC81_tdigitO_4/Y (cell CLKBUFX8) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop4/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (EMS-27):	Message (IMPMSMV-1810) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Total number of fetched objects 6245
+End delay calculation. (MEM=2013.48 CPU=0:00:00.7 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2013.48 CPU=0:00:00.9 REAL=0:00:01.0)
+Turning on fast DC mode.
+*** Done Building Timing Graph (cpu=0:00:01.1 real=0:00:01.0 totSessionCpu=0:00:50.6 mem=2013.5M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Hold views included:
+ dtmf_view_hold 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -1.973  | -1.973  |  4.589  |
+|           TNS (ns):|-114.985 |-114.985 |  0.000  |
+|    Violating Paths:|   72    |   72    |    0    |
+|          All Paths:|   228   |   219   |    9    |
++--------------------+---------+---------+---------+
+
+Density: 48.590%
+Routing Overflow: 0.15% H and 0.14% V
+------------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 1.48 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 1942.964844 Mbytes
+*** timeDesign #3 [finish] : cpu/real = 0:00:01.5/0:00:01.5 (1.0), totSession cpu/real = 0:00:50.8/0:04:18.0 (0.2), mem = 1943.0M
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: DTMF_CHIP
+# Design Mode: 180nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1952.1)
+*** Calculating scaling factor for dtmf_libs_max libraries using the default operating condition of each library.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[15], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC10_tdsp_portO_15/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop15/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[14], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC11_tdsp_portO_14/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop14/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[13], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC12_tdsp_portO_13/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop13/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[12], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC13_tdsp_portO_12/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop12/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[11], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC14_tdsp_portO_11/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop11/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[10], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC15_tdsp_portO_10/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop10/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[9], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC16_tdsp_portO_9/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop09/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[8], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC17_tdsp_portO_8/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop08/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[7], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC18_tdsp_portO_7/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop07/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[6], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC19_tdsp_portO_6/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop06/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[5], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC20_tdsp_portO_5/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop05/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[4], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC21_tdsp_portO_4/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop04/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[3], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC22_tdsp_portO_3/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop03/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[2], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC23_tdsp_portO_2/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop02/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[1], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC24_tdsp_portO_1/Y (cell CLKBUFX2) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop01/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdsp_portO[0], driver DTMF_INST/TDSP_CORE_INST/DATA_BUS_MACH_INST/FE_OFC25_tdsp_portO_0/Y (cell CLKBUFX3) voltage 1.98 does not match receiver IOPADS_INST/Ptdspop00/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[7], driver DTMF_INST/DIGIT_REG_INST/FE_OFC78_tdigitO_7/Y (cell CLKBUFX8) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop7/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[6], driver DTMF_INST/DIGIT_REG_INST/FE_OFC79_tdigitO_6/Y (cell BUFX4) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop6/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[5], driver DTMF_INST/FE_OFC80_tdigitO_5/Y (cell BUFX4) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop5/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net tdigitO[4], driver DTMF_INST/DIGIT_REG_INST/FE_OFC81_tdigitO_4/Y (cell CLKBUFX8) voltage 1.98 does not match receiver IOPADS_INST/Ptdigop4/I (cell PDO04CDG) voltage 3.6 for view dtmf_view_hold.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (EMS-27):	Message (IMPMSMV-1810) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Total number of fetched objects 6245
+End delay calculation. (MEM=2016.84 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2016.84 CPU=0:00:00.9 REAL=0:00:01.0)
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+<CMD> zoomBox 346.46500 413.95150 1047.22050 1041.27750
+<CMD> zoomBox 560.19000 615.35900 784.83650 816.46550
+<CMD> zoomBox 576.27550 635.49850 767.22500 806.43900
+<CMD> zoomBox 601.57050 667.16800 739.53150 790.67250
+<CMD> zoomBox 640.09200 712.96500 701.30650 767.76500
+<CMD> zoomBox 644.76000 718.27500 696.79250 764.85500
+<CMD> selectInst DTMF_INST/SPI_INST/dout_reg_7
+<CMD> deselectAll
+<CMD> selectInst DTMF_INST/SPI_INST/spi_sr_reg_7
+<CMD> zoomBox 651.90250 729.20950 683.85750 757.81600
+<CMD> zoomBox 653.60750 731.81950 680.76950 756.13550
+<CMD> zoomBox 656.28850 735.92450 675.91350 753.49300
+<CMD> zoomBox 658.22550 738.89050 672.40500 751.58400
+<CMD> zoomBox 653.60650 731.81900 680.76950 756.13550
+<CMD> zoomBox 651.90100 729.20800 683.85750 757.81600
+<CMD> zoomBox 647.53400 722.52300 691.76500 762.11900
+<CMD> zoomBox 617.29450 684.15650 734.57200 789.14500
+<CMD> zoomBox 598.64750 660.49750 760.96950 805.81050
+<CMD> zoomBox -22.29650 493.97100 947.70200 1362.32650
+<CMD> selectInst DTMF_INST/SPI_INST/spi_sr_reg_3
+<CMD> zoomBox -1147.58100 100.22500 1424.34100 2402.64400
+<CMD> zoomBox -1525.12000 8.62900 1500.67100 2717.35800
+<CMD> zoomBox -1147.58100 100.22500 1424.34150 2402.64450
+<CMD> zoomBox -826.67300 178.08150 1359.46100 2135.13800
+<CMD> zoomBox 42.54800 390.31650 1183.72450 1411.91300
 <CMD> fit
-<CMD> fit
-<CMD> fit
-<CMD> setDrawView fplan
-<CMD> setDrawView place
-<CMD> setDrawView fplan
-<CMD> set_power_rail_display -plot none
-<CMD> setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
-<CMD> fit
-<CMD> ::read_power_rail_results -power_db run1/power.db -rail_directory run1/VDD_25C_avg_1 -instance_voltage_window { timing  whole  } -instance_voltage_method {  worst  best  avg  worstavg worstslidingavg bestslidingavg }
-avg best bestslidingavg worst worstavg worstslidingavg 
-timing whole 
-
-Begin Loading State Directory in Local GUI mode
-
-
-Begin Initializing Design.
-
-No Nets are Specified, will Load All the Nets Automatically.
-Nets Number: 1.
-Icf Flow Enabled   :  0
-Loading CellIdMap Sucessfully.
-is multi-die design:  0
-start creating net:VDD  die: 
-
-Ended Initializing Design.: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=1741.38MB/4191.92MB/1765.73MB)
-
-
-Begin Building Rail DB.
-
-Load instances in Voltus::Netlist::Net for Net: VDD
-load parasitics in mThreadPool for net: VDD
-
-1761 Nodes Loaded for VDD.
-1927 Elements Loaded for VDD.
-
-
-Total Nodes Number: 1761.
-Total Elements Number: 1927.
-
-
-Ended Building Rail DB.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.53MB/4191.92MB/1765.73MB)
-
-
-Begin Building Instance DB
-
-Loading Instances from PGDB.
-
-9 Instances Loaded for VDD.
-
-
-Total Instances Number: 9.
-
-Begin Building Pin Map.
-
-Pin Name List: 4 Pins Loaded.
-
-
-End Building Pin Map.
-
-Ended Building Instance DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.55MB/4191.92MB/1765.73MB)
-
-
-Begin Loading Plots in Multi-Thread Mode
-
-Begin Initializing ir Plot
-Ended Initializing ir Plot: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.76MB/4191.92MB/1765.73MB)
-Ended Initializing ir Plot: (cpu=00:00:00:000, real=00:00:00:014, pid=24931, tid=27784)
-
-Begin Initializing rc Plot
-Ended Initializing rc Plot: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.77MB/4191.92MB/1765.73MB)
-Ended Initializing rc Plot: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Initializing tc Plot
-Ended Initializing tc Plot: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.78MB/4191.92MB/1765.73MB)
-Ended Initializing tc Plot: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Initializing cap Plot
-Ended Initializing cap Plot: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.78MB/4191.92MB/1765.73MB)
-Ended Initializing cap Plot: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Initializing Voltage Source Vu and Vc Plots
-Ended Initializing Voltage Source Vu and Vc Plots: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.78MB/4191.92MB/1765.73MB)
-Ended Initializing Voltage Source Vu and Vc Plots: (cpu=00:00:00:000, real=00:00:00:005, pid=24931, tid=27784)
-
-Begin Initializing unc Plot
-Ended Initializing unc Plot: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.79MB/4191.92MB/1765.73MB)
-Ended Initializing unc Plot: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Initializing ivdn Plot.
-
-Begin Initializing ivdd Plot.
-
-Begin Initializing ipc Plot.
-
-Begin Initializing ipceiv Plot.
-
-Begin Initializing thermal Plot.
-
-Begin Loading ir Plot for VDD.
-1761 Nodes of ir Loaded for VDD
-Ended Loading ir Plot for VDD.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.89MB/4191.92MB/1765.73MB)Ended Loading ir Plot for VDD.: (cpu=00:00:00:000, real=00:00:00:072, pid=24931, tid=27784)
-
-Begin Loading rc Plot for VDD.
-0 Elements of rc Loaded for VDD
-Ended Loading rc Plot for VDD.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.91MB/4191.92MB/1765.73MB)Ended Loading rc Plot for VDD.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Loading tc Plot for VDD.
-120 Nodes of tc Loaded for VDD
-Ended Loading tc Plot for VDD.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.91MB/4191.92MB/1765.73MB)Ended Loading tc Plot for VDD.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Loading cap Plot for VDD.
-1761 Nodes of cap Loaded for VDD
-Ended Loading cap Plot for VDD.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.91MB/4191.92MB/1765.73MB)Ended Loading cap Plot for VDD.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Loading Voltage Source, Vu and Vc for All Nets.
-30 Nodes of vsrcs Loaded for VDD
-30 Nodes of vc Loaded for VDD
-Ended Loading Voltage Source, Vu and Vc for All Nets.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.95MB/4191.92MB/1765.73MB)
-Ended Loading Voltage Source, Vu and Vc for All Nets.: (cpu=00:00:00:000, real=00:00:00:017, pid=24931, tid=27784)
-
-Begin Loading unc for All Nets.
-133 Nodes of unc Loaded for VDD
-Ended Loading unc for All Nets.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1742.95MB/4191.92MB/1765.73MB)
-
-Ended Loading unc for All Nets.: (cpu=00:00:00:000, real=00:00:00:006, pid=24931, tid=27784)
-
-bestslidingavg is not valid method type 
-worstslidingavg is not valid method type 
-bestslidingavg is not valid method type 
-worstslidingavg is not valid method type 
-bestslidingavg is not valid method type 
-worstslidingavg is not valid method type 
-bestslidingavg is not valid method type 
-worstslidingavg is not valid method type 
-
-Begin Initializing InstPeak DB.
-
-0 Instances Loaded by Names without CellIDMap for Instance Peak Current.
-
-Ended Initializing InstPeak DB.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1743.35MB/4191.92MB/1765.73MB)
-
-Ended Initializing InstPeak DB.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Begin Initializing IVDN DB.
-
-0 Instances Loaded by Names without CellIDMap for IVDN.
-
-Ended Initializing IVDN DB.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1743.15MB/4191.92MB/1765.73MB)
-
-Ended Initializing IVDN DB.: (cpu=00:00:00:001, real=00:00:00:207, pid=24931, tid=27784)
-9 Instance Based Instances Voltage Net Loaded for VDD (Avg, timing)
-9 Instance Based Instances Voltage Net Loaded for VDD (Worst, timing)
-9 Instance Based Instances Voltage Net Loaded for VDD (Avg, whole)
-9 Instance Based Instances Voltage Net Loaded for VDD (Worst, whole)
-
-
-
-
-Begin Initializing IVDD DB.
-
-0 Instances Loaded by Names without CellIDMap for IVDD.
-
-Ended Initializing IVDD DB.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1743.32MB/4191.92MB/1765.73MB)
-
-Ended Initializing IVDD DB.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-Ended Loading ivdd and ivdn for All Nets.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1743.35MB/4191.92MB/1765.73MB)
-Ended Loading ivdd and ivdn for All Nets.: (cpu=00:00:00:002, real=00:00:00:416, pid=24931, tid=27784)
-
-[Warning] Can not get instance peak current and instance switch data under path: run1/VDD_25C_avg_1/Reports/ResultDB/info.json
-[Error] No IVDD Nets Pairs for creating Mcyc.
-Begin Loading EIV Window instance switch and peak current for All Nets.
-Begin Initializing McycDB.
-
-
-
-
-Ended Loading EIV Window instance switch and peak current for All Nets.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1743.38MB/4191.92MB/1765.73MB)
-Ended Loading EIV Window instance switch and peak current for All Nets.: (cpu=00:00:00:000, real=00:00:00:032, pid=24931, tid=27784)
-
-Thermal file not found, so no thermal data
-Ended Loading ir Plot percentage data.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-
-Ended Loading Plots in Multi-Thread Mode: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1743.39MB/4191.92MB/1765.73MB)
-
-
-Begin Loading power.db in main thread.
-
-
-Begin Power Analysis
-
-             0V	    VSS
-          1.62V	    VDD
-Begin Restoring Power Databases
-Begin Restoring Binary Database : run1/power.db
-** INFO:  (VOLTUS_POWR-3042): Load clock data from database: total of '2' clocks
-
-vclk1(142.857MHz) vclk2(71.4286MHz) ** INFO:  (VOLTUS_POWR-3043): Load rail data from database: total of '1' rails
-
-** INFO:  (VOLTUS_POWR-3044): Load net data from database: total of '6274' nets
-
-** INFO:  (VOLTUS_POWR-3045): Load instance data from database: total of '5965' instances
-
-Ended Restoring Binary Database : run1/power.db: (cpu=0:00:00,
-real=0:00:01, mem(process/total/peak)=2009.75MB/4715.13MB/2009.84MB)
-
-** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
-
-** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
-
-'set_default_switching_activity' finished successfully.
-** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
-
-
-Ended Loading power.db in main thread.: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=1273.31MB/3983.13MB/2009.84MB)
-
-
-Begin Loading power plots in Multi-Thread mode.
-
-[Warning] Cannot get decap instances successfully.
-Ended Loading ip Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ip_i Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ip_s Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ip_l Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ipd Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ipd_i Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ipd_s Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ipd_l Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading freq Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading slack Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading td Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading load Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ip_clk Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading ip_tr Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=27784)
-
-Ended Loading activity Plot.: (cpu=00:00:00:000, real=00:00:00:000, pid=24931, tid=24931)
-
-
-Ended Loading power plots in Multi-Thread mode.: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.42MB/3983.13MB/2009.84MB)
-
-
-Begin reading tpd data from DB
-
-
-Ended reading tpd data from DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.69MB/3983.13MB/2009.84MB)
-
-calculate sorted Tile based Power Density for reporting
-
-Begin Building query for Plots in Multi-Thread Mode
-
-
-Begin Initializing Node Based Data Query
-
-
-Ended Initializing Node Based Data Query: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.75MB/3983.13MB/2009.84MB)
-
-
-Begin Build Node Based Data Query
-
-
-Ended Build Node Based Data Query: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.75MB/3983.13MB/2009.84MB)
-
-
-Begin Set Query for ir
-
-
-Ended Set Query for ir: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.78MB/3983.13MB/2009.84MB)
-
-
-Begin Initializing Element Based Data Query
-
-
-Ended Initializing Element Based Data Query: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.79MB/3983.13MB/2009.84MB)
-
-
-Begin Build Element Based Data Query
-
-
-Ended Build Element Based Data Query: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.79MB/3983.13MB/2009.84MB)
-
-
-Begin Set Query for rc
-
-
-Ended Set Query for rc: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.79MB/3983.13MB/2009.84MB)
-
-
-Begin Initializing Sparse Node Based Data Query
-
-
-Begin Set Query for vc
-
-
-Ended Set Query for vc: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.80MB/3983.13MB/2009.84MB)
-
-
-Begin Set Query for tc
-
-
-Ended Set Query for tc: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.80MB/3983.13MB/2009.84MB)
-
-
-Begin Set Query for unc
-
-
-Ended Set Query for unc: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.80MB/3983.13MB/2009.84MB)
-
-
-Begin Set Query for cap
-
-
-Ended Set Query for cap: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.80MB/3983.13MB/2009.84MB)
-
-
-Ended Building query for Plots in Multi-Thread Mode: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1273.80MB/3983.13MB/2009.84MB)
-
-
-Begin Preparing Data for Renders
-
-Instances Number: 9.
-
-Begin Generating Image cache for plots
-
-
-Ended Generating Image cache for plots: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1370.95MB/4066.13MB/2009.84MB)
-
-
-Ended Preparing Data for Renders: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1370.95MB/4066.13MB/2009.84MB)
-
-
-Ended Loading State Directory in Local GUI mode: (cpu=0:00:00, real=0:00:08, mem(process/total/peak)=1370.95MB/4066.13MB/2009.84MB)
-
-<CMD> set_power_rail_display -plot ir
-<CMD> setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
-<CMD> set_power_rail_display -plot none
-<CMD> setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
-<CMD> set_power_rail_display -plot ir
-<CMD> setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
-<CMD> set_power_rail_display -plot tc
-<CMD> setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
-<CMD> set_power_rail_display -plot ir
-<CMD> setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
-<CMD> saveDesign floorplan.inn
-#% Begin save design ... (date=11/20 16:28:52, mem=1379.0M)
-% Begin Save ccopt configuration ... (date=11/20 16:28:52, mem=1379.1M)
-% End Save ccopt configuration ... (date=11/20 16:28:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1381.2M, current mem=1381.2M)
-% Begin Save netlist data ... (date=11/20 16:28:52, mem=1381.4M)
-Writing Binary DB to floorplan.inn.dat/DTMF_CHIP.v.bin in single-threaded mode...
-% End Save netlist data ... (date=11/20 16:28:53, total cpu=0:00:00.0, real=0:00:01.0, peak res=1381.5M, current mem=1381.5M)
+<CMD> selectInst DTMF_INST/TDSP_CORE_INST/EXECUTE_INST/top_reg_9
+<CMD> deselectAll
+<CMD> selectWire 335.8800 702.9600 1176.1800 703.7600 1 VSS
+<CMD> saveDesign preCTSopt.inn
+% Begin save design ... (date=11/20 17:51:32, mem=1455.4M)
+% Begin Save ccopt configuration ... (date=11/20 17:51:32, mem=1455.4M)
+% End Save ccopt configuration ... (date=11/20 17:51:32, total cpu=0:00:00.0, real=0:00:01.0, peak res=1456.4M, current mem=1456.4M)
+% Begin Save netlist data ... (date=11/20 17:51:33, mem=1456.4M)
+Writing Binary DB to preCTSopt.inn.dat/DTMF_CHIP.v.bin in single-threaded mode...
+% End Save netlist data ... (date=11/20 17:51:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1456.5M, current mem=1456.5M)
 Saving symbol-table file ...
-Saving congestion map file floorplan.inn.dat/DTMF_CHIP.route.congmap.gz ...
-% Begin Save AAE data ... (date=11/20 16:28:53, mem=1382.3M)
+Saving congestion map file preCTSopt.inn.dat/DTMF_CHIP.route.congmap.gz ...
+% Begin Save AAE data ... (date=11/20 17:51:33, mem=1457.0M)
 Saving AAE Data ...
-% End Save AAE data ... (date=11/20 16:28:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1382.4M, current mem=1382.4M)
-Saving preference file floorplan.inn.dat/gui.pref.tcl ...
+% End Save AAE data ... (date=11/20 17:51:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1457.0M, current mem=1457.0M)
+Saving preference file preCTSopt.inn.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
-% Begin Save floorplan data ... (date=11/20 16:28:54, mem=1385.6M)
+% Begin Save floorplan data ... (date=11/20 17:51:33, mem=1457.9M)
 Saving floorplan file ...
-% End Save floorplan data ... (date=11/20 16:28:55, total cpu=0:00:00.0, real=0:00:01.0, peak res=1386.6M, current mem=1386.6M)
-Saving PG file floorplan.inn.dat/DTMF_CHIP.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Thu Nov 20 16:28:55 2025)
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2576.1M) ***
+Convert 0 swires and 0 svias from compressed groups
+% End Save floorplan data ... (date=11/20 17:51:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1458.4M, current mem=1458.4M)
+Saving PG file preCTSopt.inn.dat/DTMF_CHIP.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Thu Nov 20 17:51:33 2025)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1980.4M) ***
 Saving Drc markers ...
 ... No Drc file written since there is no markers found.
-% Begin Save placement data ... (date=11/20 16:28:55, mem=1386.7M)
+% Begin Save placement data ... (date=11/20 17:51:33, mem=1458.5M)
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
-% End Save placement data ... (date=11/20 16:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1386.8M, current mem=1386.8M)
-% Begin Save routing data ... (date=11/20 16:28:55, mem=1386.8M)
+% End Save placement data ... (date=11/20 17:51:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1458.6M, current mem=1458.6M)
+% Begin Save routing data ... (date=11/20 17:51:33, mem=1458.6M)
 Saving route file ...
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2576.1M) ***
-% End Save routing data ... (date=11/20 16:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1387.0M, current mem=1387.0M)
-Saving property file floorplan.inn.dat/DTMF_CHIP.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2579.1M) ***
-% Begin Save power constraints data ... (date=11/20 16:28:56, mem=1388.7M)
-% End Save power constraints data ... (date=11/20 16:28:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=1388.8M, current mem=1388.8M)
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1980.4M) ***
+% End Save routing data ... (date=11/20 17:51:33, total cpu=0:00:00.0, real=0:00:01.0, peak res=1458.8M, current mem=1458.8M)
+Saving SCANDEF file ...
+*** Scan Trace Summary (runtime: cpu: 0:00:00.0 , real: 0:00:00.0): 
+Successfully traced 2 scan chains (total 540 scan bits).
+Start applying DEF ordered sections ...
+Successfully applied all DEF ordered sections.
+*** Scan Sanity Check Summary:
+*** 2 scan chains passed sanity check.
+Saving property file preCTSopt.inn.dat/DTMF_CHIP.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2176.4M) ***
+% Begin Save power constraints data ... (date=11/20 17:51:34, mem=1460.2M)
+% End Save power constraints data ... (date=11/20 17:51:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1460.3M, current mem=1460.3M)
 dtmf_rc_corner
 dtmf_rc_corner
 dtmf_rc_corner
-Generated self-contained design floorplan.inn.dat
-#% End save design ... (date=11/20 16:28:57, total cpu=0:00:00.5, real=0:00:05.0, peak res=1391.6M, current mem=1391.6M)
-*** Message Summary: 0 warning(s), 0 error(s)
+Generated self-contained design preCTSopt.inn.dat
+% End save design ... (date=11/20 17:51:34, total cpu=0:00:00.5, real=0:00:02.0, peak res=1488.7M, current mem=1463.2M)
 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Nov 20 17:51:50 2025
+  Total CPU time:     0:01:22
+  Total real time:    0:08:28
+  Peak memory (main): 1467.77MB
+
+
+*** Memory Usage v#1 (Current mem = 2028.855M, initial mem = 476.027M) ***
+*** Message Summary: 28744 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:17, real=0:08:27, mem=2028.9M) ---

@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Wed Nov 19 16:39:56 2025                
+#  Created on Thu Nov 20 17:22:37 2025                
 #                                                     
 #######################################################
 
@@ -737,34 +737,116 @@ set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
 getVersion
 win
-set defHierChar /
-get_message -id GLOBAL-100 -suppress
-set locv_inter_clock_use_worst_derate false
-set init_io_file dtmf.io
-set init_oa_search_lib {}
-set init_verilog {../verilog/dtmf_chip_ak.v ../verilog/stubs.v}
-set init_pwr_net VDD
-set init_mmmc_file ./dtmf.view
-set delaycal_input_transition_delay 0.1ps
-set init_lef_file ../lef/all.lef
-set init_top_cell DTMF_CHIP
-set fpIsMaxIoHeight 0
-set init_gnd_net VSS
-get_message -id GLOBAL-100 -suppress
-get_message -id GLOBAL-100 -suppress
-set timing_case_analysis_for_icg_propagation false
-init_design
-loadFPlan dtmf_power_fp_1.fp
-setDrawView fplan
+restoreDesign placeopt.inn
+man restoreDesign
+man restoreDesign > innovus 1> restoreDesign placeopt.inn
+restoreDesign restorePowerSwitch restoreRC restore_ccopt_config
+restoreDesign placeopt.inn.dat/
+man restoreDesign > restoreDesign.txt
+is_common_ui_mode
+restoreDesign /home/shadab/shadab/FPR/work/placeopt.inn.dat DTMF_CHIP
+setRouteMode -earlyGlobalMinRouteLayer 2 -earlyGlobalMaxRouteLayer 4 -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+earlyGlobalRoute
+earlyGlobalRoute
+redraw
+redraw
+setLayerPreference groupmain_Congestion -isVisible 1
+setLayerPreference congestH -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference congestV -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+zoomBox 355.47450 265.62700 1325.37750 1133.89700
+zoomBox 749.45850 684.70500 825.99650 643.29900
+zoomBox 759.59750 637.95800 814.89650 687.46250
+selectWire 773.0500 656.4600 803.0300 656.7400 3 {DTMF_INST/TDSP_CORE_INST/EXECUTE_INST/nbus_430[0]}
 fit
-zoomBox 34.28100 47.34100 1613.60550 1461.17350
-zoomBox 210.49950 151.84600 1552.92500 1353.60350
-zoomBox 360.28500 240.67550 1501.34650 1262.16900
-zoomBox 595.82200 380.35900 1420.23950 1118.38850
-zoomBox 888.60000 552.63700 1318.95200 937.89400
-zoomBox 936.53400 580.77950 1302.33350 908.24800
-zoomBox 687.80700 438.66450 1388.56500 1065.99250
-zoomBox 487.94650 324.80650 1457.85450 1193.08100
-zoomBox -415.02350 -189.60300 1770.90450 1767.26900
-zoomBox -1038.46150 -544.76700 1987.04450 2163.70650
-writeFPlanScript -fileName my_floorplan.tcl -sections {row blocks}
+setLayerPreference congestH -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference congestV -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference groupmain_Congestion -isVisible 0
+setLayerPreference groupmain_Congestion -isVisible 1
+zoomBox 608.15450 1027.67350 713.91550 895.47200
+zoomBox 604.00150 918.42700 710.69800 1013.94300
+zoomBox 610.56450 927.39150 701.25700 1008.58050
+zoomBox 616.14300 935.01150 693.23200 1004.02250
+zoomBox 620.88500 941.48850 686.41050 1000.14800
+zoomBox 624.91500 946.99400 680.61250 996.85500
+zoomBox 628.34100 951.67350 675.68400 994.05550
+setLayerPreference congChan -isVisible 0
+setLayerPreference congChan -isVisible 1
+setLayerPreference congChan -isVisible 0
+setLayerPreference routeCongest -isVisible 0
+setLayerPreference groupmain_Congestion -isVisible 0
+setLayerPreference routeCongest -isVisible 1
+zoomBox 621.91000 947.47950 677.60800 997.34100
+zoomBox 614.34450 942.54600 679.87150 1001.20650
+zoomBox 605.44350 936.74150 682.53450 1005.75450
+panPage 0 1
+zoomBox 594.83100 950.54650 685.52650 1031.73850
+zoomBox 567.65700 932.88100 693.18750 1045.25750
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+zoomBox 530.04600 773.57850 703.79100 929.11750
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 0 1
+zoomBox 770.80200 786.22100 1103.64450 1084.18600
+deselectAll
+selectInst DTMF_INST/RAM_128x16_TEST_INST/RAM_128x16_INST
+fit
+setLayerPreference routeCongest -isVisible 0
+setLayerPreference groupmain_Congestion -isVisible 0
+setLayerPreference routeCongest -isVisible 1
+deselectAll
+selectWire 776.3500 525.4200 776.6300 529.6200 2 DTMF_INST/TDSP_CORE_INST/DECODE_INST/n_4475
+deselectAll
+selectWire 735.2800 289.7200 743.2800 797.9900 6 VSS
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/EXECUTE_INST/pc_reg_6
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/EXECUTE_INST/update_stall_reg
+deselectAll
+saveDesign earlyGlobalRouted.inn
+selectWire 335.8800 697.9200 1176.1800 698.7200 1 VDD
+deselectAll
+selectInst DTMF_INST/SPI_INST/dout_reg_2
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/TDSP_CORE_GLUE_INST/i_278290
+deselectAll
+selectWire 729.4900 741.5800 738.3500 741.8600 3 {DTMF_INST/upcm[5]}
+zoomBox 538.44850 710.39050 834.09850 659.91350
+deselectAll
+selectWire 335.8800 708.0000 1176.1800 708.8000 1 VDD
+deselectAll
+selectWire 335.8800 713.0400 1176.1800 713.8400 1 VSS
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/TDSP_CORE_GLUE_INST/i_846
+deselectAll
+selectWire 574.3900 715.2600 678.2900 715.5400 3 {tdsp_portO[15]}
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/EXECUTE_INST/ar0_reg_13
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/data_out_reg_12
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/PORT_BUS_MACH_INST/i_1002
+zoomBox 619.91900 645.48450 731.42450 745.30550
+zoomBox 653.43600 683.60850 689.18300 715.60950
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/TDSP_CORE_GLUE_INST/i_5525
+deselectAll
+selectNet DTMF_INST/TDSP_CORE_INST/MPY_32_INST/n_334
+highlight 0x7ff37f24bc20 -index 2
+highlight 0x7ff37f24bc20 -index 1
+dehighlight 0x7ff37f24bc20
+deselectAll
+selectWire 529.5100 846.3000 529.7900 891.3800 2 {DTMF_INST/TDSP_CORE_INST/mpy_result[1]}
+deselectAll
+selectInst DTMF_INST/TDSP_CORE_INST/MPY_32_INST/i_83
+fit
+deselectAll
+saveDesign pr.inn
