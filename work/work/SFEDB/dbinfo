@@ -1,0 +1,16 @@
+designName: DTMF_CHIP 
+numXParts: 1 
+numYParts: 1 
+minX: 0 
+minY: 0 
+maxX: 16239600 
+maxY: 13921200 
+dbUnit: 10000 
+maxDEFUnit: 2000 
+HALO: 9 
+totalNumCells: 5981 
+totalNumIgnoredCells: 5906 
+hasCellInstNameIDMap: 1 
+globalDelimiter: / 
+defInstDataFile: defInstData 
+version: 1.1

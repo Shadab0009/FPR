@@ -1,0 +1,46 @@
+Voltage source current:
+      Range  Source       Source        Location    Layer
+      Index  Current      Name          (um)
+      -----  --------     -------------------------------
+         8   -7.3541e-04A   VDDvsrc29   232.91, 861.45  METAL_5
+         8   -2.3299e-03A   VDDvsrc23   232.91, 971.72  METAL_5
+         4   -1.1723e-02A   VDDvsrc11   1391.06, 381.02  METAL_5
+         1   -2.1501e-02A   VDDvsrc6   451.59, 232.91  METAL_6
+         6   -6.5571e-03A   VDDvsrc18   1160.09, 1159.21  METAL_6
+         8   -0.0000e+00A   VDDvsrc25   221.36, 861.45  METAL_1
+         8   -0.0000e+00A   VDDvsrc26   221.36, 861.45  METAL_2
+         8   -0.0000e+00A   VDDvsrc27   230.81, 861.45  METAL_3
+         8   -0.0000e+00A   VDDvsrc28   230.81, 861.45  METAL_4
+         8   -0.0000e+00A   VDDvsrc30   230.81, 861.45  METAL_6
+         8   -0.0000e+00A   VDDvsrc19   221.36, 971.72  METAL_1
+         8   -0.0000e+00A   VDDvsrc20   221.36, 971.72  METAL_2
+         8   -0.0000e+00A   VDDvsrc21   230.81, 971.72  METAL_3
+         8   -0.0000e+00A   VDDvsrc22   230.81, 971.72  METAL_4
+         8   -0.0000e+00A   VDDvsrc24   230.81, 971.72  METAL_6
+         8   -0.0000e+00A   VDDvsrc13   1160.09, 1170.76  METAL_1
+         8   -0.0000e+00A   VDDvsrc14   1160.09, 1170.76  METAL_2
+         8   -0.0000e+00A   VDDvsrc15   1160.09, 1161.31  METAL_3
+         8   -0.0000e+00A   VDDvsrc16   1160.09, 1161.31  METAL_4
+         8   -0.0000e+00A   VDDvsrc17   1160.09, 1161.31  METAL_5
+         8   -0.0000e+00A   VDDvsrc7   1402.60, 381.02  METAL_1
+         8   -0.0000e+00A   VDDvsrc8   1402.60, 381.02  METAL_2
+         8   -0.0000e+00A   VDDvsrc9   1393.15, 381.02  METAL_3
+         8   -0.0000e+00A   VDDvsrc10   1393.15, 381.02  METAL_4
+         8   -0.0000e+00A   VDDvsrc12   1393.15, 381.02  METAL_6
+         8   -0.0000e+00A   VDDvsrc1   451.59, 221.36  METAL_1
+         8   -0.0000e+00A   VDDvsrc2   451.59, 221.36  METAL_2
+         8   -0.0000e+00A   VDDvsrc3   451.59, 230.81  METAL_3
+         8   -0.0000e+00A   VDDvsrc4   451.59, 230.81  METAL_4
+         8   -0.0000e+00A   VDDvsrc5   451.59, 230.81  METAL_5
+*
+* Data filtering results for voltage source current:
+  Minimum, Average, Maximum Voltage Source Current: -21.501mA, -1.428mA, 0.000A
+  Total Current: -42.846mA
+    Range 1( -21.503mA  -   -18.813mA ):         1 (  3.33%)
+    Range 2( -18.813mA  -   -16.126mA ):         0 (  0.00%)
+    Range 3( -16.126mA  -   -13.438mA ):         0 (  0.00%)
+    Range 4( -13.438mA  -   -10.750mA ):         1 (  3.33%)
+    Range 5( -10.750mA  -    -8.063mA ):         0 (  0.00%)
+    Range 6(  -8.063mA  -    -5.375mA ):         1 (  3.33%)
+    Range 7(  -5.375mA  -    -2.688mA ):         0 (  0.00%)
+    Range 8(  -2.688mA  -      0.000A ):        27 ( 90.00%)

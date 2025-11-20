@@ -1,0 +1,83 @@
+- Cell: PVDD1DGZ Tag: 
+ Temperature: 25
+* Cell: PVDD1DGZ Pin: VDD Instantiation: 5 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+        METAL_1               1               1               0               0               1               0
+        METAL_2               1               1               0               0               1               0
+        METAL_3               1               1               0               0               1               0
+        METAL_4               1               1               0               0               1               0
+        METAL_5               1               1               0               0               1               0
+        METAL_6               1               1               0               0               1               0
+          Total               6               6               0               0               6               0
+
+
+- Cell: pllclk Tag: 
+ Temperature: 25
+* Cell: pllclk Pin: vdd! Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+        METAL_3               1               1               0               0               1               0
+        METAL_5               1               1               0               0               1               0
+          Total               2               2               0               0               2               0
+
+
+- Cell: ram_128x16A Tag: 
+ Temperature: 25
+* Cell: ram_128x16A Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+        METAL_3              26              26               0               0              26               0
+        METAL_4              10              10               0               0              10               0
+        METAL_5              26              26               0               0              26               0
+          Total              62              62               0               0              62               0
+
+
+- Cell: ram_256x16A Tag: 
+ Temperature: 25
+* Cell: ram_256x16A Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+        METAL_3              26              26               0               0              26               0
+        METAL_4              10              10               0               0              10               0
+        METAL_5              26              26               0               0              26               0
+          Total              62              62               0               0              62               0
+
+
+- Cell: rom_512x16A Tag: 
+ Temperature: 25
+* Cell: rom_512x16A Pin: VDD Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+        METAL_3              18              18               0               0              18               0
+        METAL_4              10              10               0               0              10               0
+        METAL_5              18              18               0               0              18               0
+          Total              46              46               0               0              46               0
+
+
+
+Grid Statistics of Net VDD:
+- NODE
+  Total node: 1760
+    Top Level grid node: 1704
+      Top level interface node: 146
+    Missing interface node: 56
+    Cell internal node: 0
+- ELEM
+  Total element: 1927
+    Top Level grid element: 1927
+    Cell internal element: 0
+- INST
+  Instance logically connected: 9
+    Tech: 9
+    StdCell: 0
+    Macro:
+      Early: 0
+      IR: 0
+      EM: 0
+    Current Region:  0
+  Dropped instance due to missing/incomplete cell library: 0
+- TAP
+  Total tap: 202
+
+

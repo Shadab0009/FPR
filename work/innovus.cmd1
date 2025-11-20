@@ -936,3 +936,1578 @@ deleteSelectedFromFPlan
 selectObject Module DTMF_INST
 deleteSelectedFromFPlan
 man addSizeBlockage
+uiSetTool obstruct
+createPlaceBlockage -box -441.24850 533.60750 -224.61800 821.53400 -type hard
+createPlaceBlockage -box 33.14450 1065.58600 151.05700 1106.71800 -type hard
+createPlaceBlockage -box 162.02600 914.76700 227.83750 953.15750 -type hard
+createPlaceBlockage -box 178.47900 774.91700 203.15800 859.92400 -type hard
+createPlaceBlockage -box 225.09550 895.57200 326.55550 955.89950 -type hard
+createPlaceBlockage -box 850.30700 785.88600 1017.57900 997.03200 -type hard
+uiSetTool moveWire
+uiSetTool move
+selectObstruct 850.08 784.56 1017.72 1001.28 defScreenName
+setObjFPlanBox LayerShape (1700160,1569120,2035440,2002560) 852.822 795.5285 1020.462 1012.2485
+deselectAll
+selectObstruct 235.62 895.44 326.7 955.92 defScreenName
+setObjFPlanBox LayerShape (471240,1790880,653400,1911840) 238.3625 950.2835 329.4425 1010.7635
+uiSetTool copy
+createPlaceBlockage -boxList {238.26 232.435 329.34 292.915} -name defScreenName -type hard
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+deselectAll
+selectObstruct 238.26 235.2 329.34 290.64 defScreenName
+createPlaceBlockage -boxList {929.2835 235.2 1020.3635 290.64} -name defScreenName -type hard
+deselectAll
+selectObject Module DTMF_INST
+deselectAll
+selectObject Module DTMF_INST
+deselectAll
+selectObject Module DTMF_INST
+uiSetTool copy
+deselectAll
+selectObject Module DTMF_INST
+deselectAll
+selectObstruct 852.72 794.64 1020.36 1011.36 defScreenName
+createPlaceBlockage -boxList {573.02 536.877 740.66 753.597} -name defScreenName -type hard
+uiSetTool flightline
+uiSetTool select
+uiSetTool obstruct
+viewNext
+viewNext
+viewNext
+viewNext
+viewNext
+viewNext
+viewNext
+viewNext
+zoomBox 54281.57850 54948.81000 597097.36250 540884.80300
+zoomBox 108563.15700 54948.81000 651378.94100 540884.80300
+zoomBox 325689.47100 54948.81000 868505.25500 540884.80300
+zoomBox -422362.88200 54948.81000 120452.90200 540884.80300
+zoomBox 461690.22250 -293564.02350 -645928.89500 637336.69450
+zoomBox -364877.42650 160566.15500 27306.97800 511654.91050
+fit
+viewNext
+viewNext
+viewNext
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+zoomBox 19556.49050 -211901.42250 1059421.02100 718999.29550
+fit
+zoomBox -2032.87800 -1420.15950 2027.77900 2214.99550
+zoomBox -579.03500 -378.11300 1540.65350 1519.46050
+uiSetTool select
+uiSetTool obstruct
+createPlaceBlockage -box 649.45200 609.06400 868.82450 811.98350 -type hard
+undo
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+createPlaceBlockage -box 824.95000 609.06400 926.41000 710.52400 -type hard
+deleteSelectedFromFPlan
+createPlaceBlockage -box 797.52850 726.97650 959.31600 814.72600 -type hard
+undo
+undo
+uiSetTool select
+deleteSelectedFromFPlan
+selectObstruct 824.34 608.16 926.64 714 defScreenName
+deselectAll
+selectObstruct 824.34 608.16 926.64 714 defScreenName
+deleteSelectedFromFPlan
+selectObstruct 649.44 608.16 869.22 814.8 defScreenName
+deleteSelectedFromFPlan
+selectObstruct 797.28 724.08 959.64 814.8 defScreenName
+deleteSelectedFromFPlan
+uiSetTool select
+selectObstruct 852.72 794.64 1019.04 1011.36 defScreenName
+deselectAll
+selectObstruct 572.88 537.6 740.52 754.32 defScreenName
+deselectAll
+selectObstruct 929.28 235.2 1019.7 290.64 defScreenName
+deselectAll
+deleteAllFPObjects
+deleteAllFPObjects
+undo
+undo
+undo
+undo
+undo
+undo
+deleteAllFPObjects
+deleteAllFPObjects
+setLayerPreference pinObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+deselectAll
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+deselectAll
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+deselectAll
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+deselectAll
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+panPage 1 0
+panPage 1 0
+gui_select -rect {2001.06200 -87.44450 2636.96850 -87.44450}
+deselectAll
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+create_relative_floorplan -place DTMF_INST/RAM_256x16_TEST_INST/Inst: DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+deselectAll
+fit
+create_relative_floorplan -place DTMF_INST/RAM_256x16_TEST_INST/Inst: DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+zoomBox -401.01300 -169.65300 1400.72100 1443.28350
+zoomBox -706.62650 -297.16350 1413.06050 1600.40900
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+zoomBox 141.24800 -297.16350 2260.93500 1600.40900
+zoomBox -70.72050 -297.16350 2048.96650 1600.40900
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -80  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -100  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -100  1} -vertical_edge_separate {0  100  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -100  1} -vertical_edge_separate {0  -40  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -40  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  10}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {100  -10  100}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {4  -10  4}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {4  -10  3}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {3  -10  3}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {2  -10  2}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {2  -10  2}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {2  -10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {1  -10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {10  -40  10} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  2} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  2} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {2  -40  2} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {2  -40  2} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -82  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+redo
+redo
+redo
+redo
+redo
+man create_relative_floorplan
+man create_relative_floorplan > create_relative_floorplan.txt
+man writeFPlanScript
+man writeFPlanScript > writeFPlanScript.txt
+writeFPlanScript
+writeFPlanScript -fileName FP.tcl
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {2  -40  2} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+panPage 1 0
+panPage 1 0
+panPage 1 0
+selectInst DTMF_INST/PLLCLK_INST
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+deselectAll
+fit
+zoomBox -1132.25750 -390.68200 1801.56650 2235.71650
+uiSetTool move
+panPage 1 0
+panPage 1 0
+selectInst DTMF_INST/PLLCLK_INST
+panPage -1 0
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 625.225 702.1445 925.225 982.1445
+deselectAll
+selectInst DTMF_INST/RAM_128x16_TEST_INST/RAM_128x16_INST
+setObjFPlanBox Instance DTMF_INST/RAM_128x16_TEST_INST/RAM_128x16_INST 254.9525 258.0855 848.7725 427.0805
+deselectAll
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+setObjFPlanBox Instance DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST 1516.4655 561.7155 2114.6855 750.9505
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+zoomBox 8.57700 -2.57950 1810.31250 1610.35850
+zoomBox 70.81000 90.07100 1602.28550 1461.06850
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 260.8685 474.422 560.8685 754.422
+flipOrRotateObject -flip MY
+flipOrRotateObject -flip MY
+flipOrRotateObject -rotate R180
+flipOrRotateObject -rotate R180
+flipOrRotateObject -rotate R270
+flipOrRotateObject -rotate R270
+flipOrRotateObject -rotate R90
+flipOrRotateObject -rotate R90
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 316.344 488.2885 616.344 768.2885
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+redo
+fit
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 2395.8655 95.261 2695.8655 375.261
+deselectAll
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+setObjFPlanBox Instance DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST 357.098 350.6735 955.318 539.9085
+uiSetTool select
+zoomBox -373.74200 -208.46150 1427.99200 1404.47500
+zoomBox -607.37350 -340.49650 1512.31350 1557.07600
+zoomBox -882.23450 -495.83150 1611.51500 1736.60650
+deselectAll
+gui_group_hinst
+fit
+zoomBox 167.85050 -62.31800 1699.32450 1308.67800
+zoomBox 780.44050 -62.31800 2311.91450 1308.67800
+zoomBox 1086.73550 -62.31800 2618.20950 1308.67800
+zoomBox 780.44050 -62.31800 2311.91450 1308.67800
+zoomBox 627.29300 -62.31800 2158.76700 1308.67800
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+redo
+redo
+fit
+redo
+redo
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  0} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  1} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -50  1} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+panPage 1 0
+panPage 1 0
+panPage 1 0
+selectInst DTMF_INST/PLLCLK_INST
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+deselectAll
+fit
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {2  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {0  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0}
+setDrawView fplan
+setLayerPreference pinObj -isVisible 0
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {3  10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {3  10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {0  0  0} -vertical_edge_separate {3  10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {3  10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  0} -vertical_edge_separate {3  10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  2} -vertical_edge_separate {3  10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  10  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0}
+setDrawView fplan
+redo
+undo
+undo
+undo
+redo
+redo
+redo
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0}
+setDrawView fplan
+setLayerPreference pinObj -isVisible 1
+uiSetTool move
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 427.703 476.241 795.868 663.086
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 330.624 557.471 698.789 744.316
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 592.7725 468.9655 892.7725 748.9655
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 283.075 486.1475 651.24 672.9925
+delete_relative_floorplan DTMF_INST/ARB_INST/ROM_512x16_0_INST
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 277.1315 507.9405 645.2965 694.7855
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 255.3365 817.0085 623.5015 1003.8535
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 271.185 622.8515 639.35 809.6965
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 279.1095 468.316 647.2745 655.161
+man delete_relative_floorplan
+man delete_relative_floorplan > delete_relative_floorplan.txt
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 687.868 443.2085 987.868 723.2085
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 697.7745 524.4375 997.7745 804.4375
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 650.2255 607.6485 950.2255 887.6485
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 306.8465 648.605 675.0115 835.45
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+uiSetTool select
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+uiSetTool move
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 675.979 540.2875 975.979 820.2875
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  3} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {3  20  1} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {2  0  2} -vertical_edge_separate {2  20  0} -withoutUndoRedo -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {0  0  0} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  20  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {0  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  0  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  0  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 687.8665 435.2835 987.8665 715.2835
+uiSetTool select
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+delete_relative_floorplan DTMF_INST/PLLCLK_INST
+uiSetTool move
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 685.885 290.6555 985.885 570.6555
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 693.81 558.118 993.81 838.118
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 287.033 818.989 655.198 1005.834
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {0  10  0} -vertical_edge_separate {2  40  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {0  10  0} -vertical_edge_separate {2  40  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  10  0} -vertical_edge_separate {2  40  0}
+setDrawView fplan
+fit
+zoomBox -1030.17850 -857.17850 2421.37950 2232.70250
+zoomBox -1312.27050 -1108.54050 2748.38600 2526.61400
+zoomBox -3670.08800 -3209.50100 5481.61000 4983.22200
+zoomBox -5297.99800 -4660.06900 7368.71200 6679.34000
+zoomBox -3034.32350 -2642.99600 4744.62000 4320.81900
+zoomBox -2034.58400 -1752.16650 3585.70350 3279.19050
+zoomBox -1644.14500 -1404.26150 3133.09950 2872.39200
+zoomBox -790.40150 -643.52350 2143.42400 1982.87650
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  10  0} -vertical_edge_separate {2  10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -10  1} -vertical_edge_separate {2  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {2  0  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {0  -40  0} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+zoomBox -471.27700 -200.11950 1648.41250 1697.45500
+zoomBox -346.64600 -26.95250 1455.09050 1585.98650
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  -40  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  0  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {3  0  3} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+create_relative_floorplan -place DTMF_INST/ARB_INST/ROM_512x16_0_INST -ref_type core_boundary -horizontal_edge_separate {1  -40  1} -vertical_edge_separate {0  -10  0}
+setDrawView fplan
+uiSetTool select
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+create_relative_floorplan -place DTMF_INST/PLLCLK_INST -ref_type object -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0}
+setDrawView fplan
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+uiSetTool moveWire
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+uiSetTool move
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 290.8835 391.0485 659.0485 577.8935
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 582.284 396.243 882.284 676.243
+delete_relative_floorplan DTMF_INST/ARB_INST/ROM_512x16_0_INST
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 251.259 439.996 619.424 626.841
+zoomBox -229.17250 106.95350 1302.30400 1477.95200
+zoomBox -129.32000 220.77400 1172.43550 1386.12300
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 236.884 824.07 605.049 1010.915
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 230.149 834.174 598.314 1021.019
+create_relative_floorplan -ref_type object -horizontal_edge_separate {1  10  1} -vertical_edge_separate {2  40  0} -place DTMF_INST/PLLCLK_INST -ref DTMF_INST/ARB_INST/ROM_512x16_0_INST -no_record
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 226.7815 834.175 594.9465 1021.02
+uiSetTool select
+deleteAllFPObjects
+loadFPlan dtmf_blocks.fp
+setDrawView fplan
+fit
+zoomBox 61.08800 89.14700 1403.51350 1290.90450
+zoomBox 152.52200 153.48950 1293.58400 1174.98350
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+zoomBox 219.61250 211.72350 1189.51550 1079.99350
+zoomBox 325.11300 303.99250 1025.86800 931.31800
+uiSetTool ruler
+zoomBox 531.87650 432.08550 842.80550 710.43350
+zoomBox 552.81250 446.68650 817.10250 683.28250
+zoomBox 606.64050 494.18150 768.94800 639.48150
+zoomBox 630.41300 515.15750 747.68050 620.13700
+zoomBox 639.69700 523.34950 739.37450 612.58200
+zoomBox 646.38950 529.61600 731.11550 605.46400
+zoomBox 652.07800 534.94300 724.09500 599.41350
+zoomBox 663.21050 549.10400 700.80450 582.75850
+zoomBox 668.78350 558.62750 685.46450 573.56050
+zoomBox 671.40350 562.85100 678.80550 569.47750
+zoomBox 672.36750 563.76750 677.71600 568.55550
+zoomBox 672.74400 564.12550 677.29050 568.19550
+zoomBox 673.06400 564.42950 676.92900 567.88950
+zoomBox 673.33550 564.68800 676.62150 567.62950
+zoomBox 673.06300 564.42900 676.92900 567.89000
+zoomBox 672.36550 563.76650 677.71650 568.55700
+zoomBox 671.40000 562.84900 678.80650 569.47950
+zoomBox 670.06350 561.57900 680.31600 570.75700
+zoomBox 669.21400 560.77150 681.27550 571.56900
+zoomBox 667.03850 558.70400 683.73250 573.64850
+zoomBox 664.02750 555.84200 687.13350 576.52700
+panPage -1 0
+zoomBox 647.15850 546.39850 691.42350 586.02500
+zoomBox 660.59800 553.40550 683.70450 574.09050
+zoomBox 667.61300 557.06250 679.67550 567.86100
+zoomBox 671.87500 559.28450 677.22750 564.07600
+zoomBox 673.49950 560.13150 676.29400 562.63300
+fit
+uiSetTool select
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+gui_ungroup_hinst
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+gui_ungroup_hinst
+gui_ungroup_hinst
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+deselectAll
+selectInst DTMF_INST/RAM_128x16_TEST_INST/RAM_128x16_INST
+deselectAll
+selectInst DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST
+uiSetTool move
+setObjFPlanBox Instance DTMF_INST/RAM_256x16_TEST_INST/RAM_256x16_INST 554.703 971.0595 1152.923 1160.2945
+undo
+deselectAll
+selectInst DTMF_INST/RAM_128x16_TEST_INST/RAM_128x16_INST
+setObjFPlanBox Instance DTMF_INST/RAM_128x16_TEST_INST/RAM_128x16_INST 527.8555 721.973 1121.6755 890.968
+undo
+deselectAll
+selectInst DTMF_INST/ARB_INST/ROM_512x16_0_INST
+setObjFPlanBox Instance DTMF_INST/ARB_INST/ROM_512x16_0_INST 808.795 590.228 1176.96 777.073
+undo
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+zoomBox 160.15550 297.79700 1130.05850 1166.06700
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 334.5985 328.0345 634.5985 608.0345
+undo
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 414.252 315.2885 714.252 595.2885
+uiSetTool select
+undo
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+uiSetTool move
+uiSetTool select
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+flipOrRotateObject -flip MY
+deselectAll
+undo
+selectInst DTMF_INST/PLLCLK_INST
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+flipOrRotateObject -flip MX
+uiSetTool move
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 333.95 553.687 633.95 833.687
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+zoomBox 512.61450 496.29950 878.41350 823.76750
+zoomBox 317.18700 386.23550 1017.94300 1013.56150
+fit
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 533.954 322.5305 833.954 602.5305
+undo
+uiSetTool select
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+zoomBox 152.11250 255.28650 1122.01600 1123.55700
+uiSetTool ruler
+zoomBox 442.47700 433.97300 872.82950 819.23050
+zoomBox 531.41500 489.18350 795.70600 725.78050
+zoomBox 600.21750 525.62750 738.17950 649.13300
+zoomBox 611.48850 531.59750 728.75600 636.57700
+zoomBox 621.06850 536.67200 720.74600 625.90450
+zoomBox 629.21150 540.98500 713.93750 616.83300
+zoomBox 636.13300 544.65100 708.15050 609.12200
+zoomBox 642.01650 547.76750 703.23150 602.56800
+zoomBox 647.01700 550.41650 699.05000 596.99700
+zoomBox 657.95200 556.20850 689.90700 584.81500
+zoomBox 662.78100 558.76650 685.86900 579.43500
+zoomBox 664.66700 559.76550 684.29200 577.33400
+zoomBox 662.97800 557.31050 686.06600 577.97900
+zoomBox 660.99600 554.42750 688.15850 578.74350
+zoomBox 658.66450 551.05350 690.62050 579.66100
+zoomBox 652.69450 542.41550 696.92400 582.01050
+zoomBox 644.43050 530.46000 705.64850 585.26300
+zoomBox 632.99350 513.91250 717.72450 589.76500
+zoomBox 625.72000 503.38950 725.40400 592.62800
+zoomBox 607.09650 476.44500 745.06750 599.95850
+zoomBox 464.86100 270.65900 895.24550 655.94500
+zoomBox 384.45450 154.32600 980.14300 687.59450
+zoomBox 438.23350 388.22800 749.18700 666.59800
+panPage 0 1
+zoomBox 468.08300 605.77400 552.81600 681.62800
+zoomBox 479.55300 636.70200 511.51000 665.31050
+zoomBox 483.90450 648.46900 495.95800 659.25950
+zoomBox 484.63550 650.45050 493.34450 658.24700
+zoomBox 485.54550 652.91700 490.09200 656.98700
+zoomBox 485.16150 651.95200 491.45450 657.58550
+zoomBox 483.89350 648.76850 495.94950 659.56100
+zoomBox 478.27350 634.65350 515.88150 668.32050
+zoomBox 461.11600 591.54500 578.42900 696.56500
+zoomBox 163.37850 -19.30350 1304.90150 1002.60300
+zoomBox -363.40150 -1109.44650 2663.31150 1600.10750
+zoomBox 40.86450 -272.83950 1620.82800 1141.56500
+zoomBox 163.37800 -18.17000 1304.90150 1003.73700
+zoomBox 211.22450 81.28850 1181.51950 949.90950
+zoomBox 622.46200 357.27100 988.40950 684.87200
+zoomBox 783.92850 482.71300 901.24350 587.73500
+zoomBox 795.35650 491.59150 895.07400 580.86000
+zoomBox 805.07000 499.13800 889.83000 575.01650
+zoomBox 813.32650 505.55250 885.37300 570.04950
+zoomBox 826.31050 515.63950 878.36400 562.23850
+zoomBox 831.38100 519.57900 875.62650 559.18800
+zoomBox 842.46850 528.19200 869.64150 552.51750
+zoomBox 853.02150 537.01550 863.27000 546.19000
+zoomBox 856.99350 540.35050 860.85950 543.81150
+zoomBox 858.63900 541.67600 859.87950 542.78650
+zoomBox 859.12100 542.06650 859.58900 542.48550
+zoomBox 859.00750 541.98200 859.65550 542.56200
+zoomBox 858.49450 541.59950 859.95650 542.90850
+zoomBox 856.54000 540.14300 861.10350 544.22850
+zoomBox 663.49200 395.71650 975.71700 675.22450
+zoomBox 569.54750 249.99200 1167.67300 785.44200
+zoomBox 494.06000 132.89750 1321.91600 874.00550
+zoomBox 446.05550 58.62250 1420.00400 930.51450
+zoomBox 323.13700 -131.56200 1671.16350 1075.20950
+zoomBox -82.46550 -759.12650 2499.93100 1552.66950
+fit
+uiSetTool select
+addHaloToBlock {30 30 30 30} -allBlock
+addHaloToBlock {30 30 30 30} -allBlock
+zoomBox 89.76950 122.49700 1432.19500 1324.25450
+zoomBox 279.64550 265.62650 1249.54800 1133.89650
+zoomBox 527.50750 420.75300 1033.80300 873.99550
+zoomBox 664.49150 451.08100 975.42050 729.42900
+zoomBox 697.19350 458.32150 961.48300 694.91700
+zoomBox 724.98950 464.47550 949.63600 665.58200
+zoomBox 768.69950 474.15300 931.00650 619.45250
+zoomBox 664.49100 451.08050 975.42050 729.42900
+zoomBox 580.75550 432.54150 1011.10800 817.79900
+zoomBox 391.15750 390.56450 1091.91450 1017.89150
+zoomBox 304.44950 371.36700 1128.86950 1109.39900
+zoomBox 202.44000 348.78200 1172.34600 1217.05500
+zoomBox 82.42850 322.21150 1223.49450 1343.70900
+undo
+deselectAll
+undo
+undo
+undo
+undo
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+deleteAllFPObjects
+loadIoFile dtmf.io
+fit
+loadFPlan dtmf_blocks.fp
+setDrawView fplan
+fit
+zoomBox 64.42300 126.49950 1406.84850 1328.25700
+zoomBox 421.87450 411.49450 1017.51600 944.72100
+zoomBox 355.10800 383.75450 1055.86250 1011.07950
+zoomBox 278.95850 349.83900 1103.37600 1087.86850
+zoomBox 191.62950 305.79800 1161.53250 1174.06800
+uiSetTool move
+selectInst DTMF_INST/PLLCLK_INST
+setObjFPlanBox Instance DTMF_INST/PLLCLK_INST 396.686 391.827 696.686 671.827
+uiSetTool select
+deselectAll
+selectInst DTMF_INST/PLLCLK_INST
+addHaloToBlock {30 30 30 30} -fromInstBox -allBlock
+addHaloToBlock {30 30 30 30} -allBlock
+addHaloToBlock {30 30 30 30} -fromInstBox -allBlock
+setLayerPreference pinObj -isVisible 0
+addHaloToBlock {30 30 30 30} -allBlock
+addHaloToBlock {30 30 30 30} -fromInstBox -allBlock
+setLayerPreference pinObj -isVisible 1
+addHaloToBlock {30 30 30 30} -fromInstBox -allBlock
+deselectAll
+redraw
+redraw
+fit
+zoomBox 202.57850 334.30200 798.22000 867.52850
+zoomBox 331.20200 463.40600 555.84850 664.51250
+uiSetTool ruler
+zoomBox 349.58900 490.98650 511.89650 636.28650
+zoomBox 356.77000 501.75800 494.73150 625.26300
+zoomBox 358.26900 511.55600 475.53650 616.53550
+zoomBox 360.62600 526.96350 445.35200 602.81150
+zoomBox 361.54650 532.98050 433.56400 597.45150
+fit
+uiSetTool layerBlk
+createRouteBlk -box 336.54100 1085.36150 408.65100 1176.70050
+uiSetTool select
+selectRouteBlk -box 336.54 1085.36 408.65 1176.7 defLayerBlkName -layer Metal3
+setSelectedRouteBlk 336.54 1085.36 408.65 1176.7 defLayerBlkName {{1 } {2 } {3 }} {Undefined ALLNET} {} {}
+setSelectedRouteBlk 336.54 1085.36 408.65 1176.7 defLayerBlkName {{1 } {2 } {3 }} {Undefined ALLNET} {} {}
+saveFPlan dtmf_fp_1.fp
+deselectAll
+selectRouteBlk -box 336.54 1085.36 408.65 1176.7 defLayerBlkName -layer Metal3
+setSelectedRouteBlk 336.54 1085.36 408.65 1176.7 defLayerBlkName {{3 }} {Undefined ALLNET} {} {}
+saveFPlan dtmf_fp_1.fp
+uiSetTool obstruct
+createPlaceBlockage -box 512.00850 712.79400 783.62200 756.06000 -type hard
+uiSetTool select
+deselectAll
+selectObstruct 511.5 708.4 784.08 758.8 defScreenName
+deselectAll
+selectObstruct 511.5 708.4 784.08 758.8 defScreenName
+deselectAll
+selectObstruct 511.5 708.4 784.08 758.8 defScreenName
+dbSet [uiGetRecordObjByInfo -objType pBlkg -rect 511.5 708.4 784.08 758.8 -name defScreenName].type Partial
+dbSet [uiGetRecordObjByInfo -objType pBlkg -rect 511.5 708.4 784.08 758.8 -name defScreenName].density 25
+dbSet [uiGetRecordObjByInfo -objType pBlkg -rect 511.5 708.4 784.08 758.8 -name defScreenName].isNoFlop 0
+editSplit
+deleteAllFPObjects
+deleteAllFPObjects
+undo
+undo
+undo
+undo
+undo
+undo
+loadFPlan dtmf_fp.fp
+setDrawView fplan
+fit
+loadFPlan dtmf_fp.fp
+setDrawView fplan
+fit
+loadFPlan dtmf_blocks.fp
+setDrawView fplan
+fit
+loadFPlan dtmf_fp_1.fp
+setDrawView fplan
+fit
+uiSetTool layerBlk
+createRouteBlk -box 365.38500 941.14150 420.66950 984.40750
+undo
+undo
+uiSetTool select
+undo
+undo
+deleteSelectedFromFPlan
+selectRouteBlk -box 365.385 941.14 420.67 984.405 defLayerBlkName -layer Metal3
+deleteSelectedFromFPlan
+uiSetTool obstruct
+createPlaceBlockage -box 360.57800 734.42700 526.43050 873.83950 -type hard
+uiSetTool select
+selectObstruct 360.36 733.6 526.68 874.72 defScreenName
+dbSetObjFPlanBox [uiGetRecordObjByInfo -objType pBlkg -rect 360.36 733.6 526.68 874.72 -name defScreenName] 720720 1467200 881760 1749440
+dbSetObjFPlanBox [uiGetRecordObjByInfo -objType pBlkg -rect 360.36 733.6 440.88 874.72 -name defScreenName] 720720 1467200 881760 1678880
+dbSetObjFPlanBox [uiGetRecordObjByInfo -objType pBlkg -rect 360.36 733.6 440.88 839.44 -name defScreenName] 753720 1447040 914760 1658720
+dbSet [uiGetRecordObjByInfo -objType pBlkg -rect 376.86 723.52 457.38 829.36 -name defScreenName].type Partial
+dbSet [uiGetRecordObjByInfo -objType pBlkg -rect 376.86 723.52 457.38 829.36 -name defScreenName].density 25
+dbSet [uiGetRecordObjByInfo -objType pBlkg -rect 376.86 723.52 457.38 829.36 -name defScreenName].isNoFlop 0
+editSplit

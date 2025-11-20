@@ -1,0 +1,23 @@
+
+REDUCED
+
+CSUBSTRATE
+OD
+P_SOURCE_DRAIN*
+N_SOURCE_DRAIN*
+POLYCIDE*
+CONT*2
+METAL_1"Metal1*2
+VIA_1"Via12*	2
+	METAL_2"Metal2*
+2
+
+VIA_2"Via23*2	
+METAL_3"Metal3*2
+
+VIA_3"Via34*2
+METAL_4"Metal4*2
+VIA_4"Via45*2
+METAL_5"Metal5*2
+VIA_5"Via56*2
+METAL_6"Metal62

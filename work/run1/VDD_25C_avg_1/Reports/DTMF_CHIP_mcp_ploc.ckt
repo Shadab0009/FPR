@@ -1,0 +1,79 @@
+.SUBCKT dummy
++ VDDvsrc29
++ VDDvsrc23
++ VDDvsrc11
++ VDDvsrc6
++ VDDvsrc18
++ VDDvsrc25
++ VDDvsrc26
++ VDDvsrc27
++ VDDvsrc28
++ VDDvsrc30
++ VDDvsrc19
++ VDDvsrc20
++ VDDvsrc21
++ VDDvsrc22
++ VDDvsrc24
++ VDDvsrc13
++ VDDvsrc14
++ VDDvsrc15
++ VDDvsrc16
++ VDDvsrc17
++ VDDvsrc7
++ VDDvsrc8
++ VDDvsrc9
++ VDDvsrc10
++ VDDvsrc12
++ VDDvsrc1
++ VDDvsrc2
++ VDDvsrc3
++ VDDvsrc4
++ VDDvsrc5
+
+*Header information for model connection protocol
+*[MCP Begin]
+*[MCP Version] 1.1
+*[Structure Type] DIE
+*[MCP Source] voltus_rail64 Version v21.15-s076_1 (09/23/2022 08:39:08)
+
+*[Coordinate Unit] um
+*[Connection] DTMF_CHIP dummy 30
+*[Connection Type] PKG
+*[REM]
+*[REM] List of pins for power nets
+*[REM]
+*[Power Nets]
+*VDDvsrc29 VDDvsrc29 VDD 232.905 861.45
+*VDDvsrc23 VDDvsrc23 VDD 232.905 971.715
+*VDDvsrc11 VDDvsrc11 VDD 1391.06 381.02
+*VDDvsrc6 VDDvsrc6 VDD 451.59 232.905
+*VDDvsrc18 VDDvsrc18 VDD 1160.09 1159.21
+*VDDvsrc25 VDDvsrc25 VDD 221.36 861.45
+*VDDvsrc26 VDDvsrc26 VDD 221.36 861.45
+*VDDvsrc27 VDDvsrc27 VDD 230.812 861.45
+*VDDvsrc28 VDDvsrc28 VDD 230.812 861.45
+*VDDvsrc30 VDDvsrc30 VDD 230.812 861.45
+*VDDvsrc19 VDDvsrc19 VDD 221.36 971.715
+*VDDvsrc20 VDDvsrc20 VDD 221.36 971.715
+*VDDvsrc21 VDDvsrc21 VDD 230.812 971.715
+*VDDvsrc22 VDDvsrc22 VDD 230.812 971.715
+*VDDvsrc24 VDDvsrc24 VDD 230.812 971.715
+*VDDvsrc13 VDDvsrc13 VDD 1160.09 1170.76
+*VDDvsrc14 VDDvsrc14 VDD 1160.09 1170.76
+*VDDvsrc15 VDDvsrc15 VDD 1160.09 1161.31
+*VDDvsrc16 VDDvsrc16 VDD 1160.09 1161.31
+*VDDvsrc17 VDDvsrc17 VDD 1160.09 1161.31
+*VDDvsrc7 VDDvsrc7 VDD 1402.6 381.02
+*VDDvsrc8 VDDvsrc8 VDD 1402.6 381.02
+*VDDvsrc9 VDDvsrc9 VDD 1393.15 381.02
+*VDDvsrc10 VDDvsrc10 VDD 1393.15 381.02
+*VDDvsrc12 VDDvsrc12 VDD 1393.15 381.02
+*VDDvsrc1 VDDvsrc1 VDD 451.59 221.36
+*VDDvsrc2 VDDvsrc2 VDD 451.59 221.36
+*VDDvsrc3 VDDvsrc3 VDD 451.59 230.812
+*VDDvsrc4 VDDvsrc4 VDD 451.59 230.812
+*VDDvsrc5 VDDvsrc5 VDD 451.59 230.812
+*[MCP End]
+*End of header information for model connection protocol
+
+.ENDS dummy

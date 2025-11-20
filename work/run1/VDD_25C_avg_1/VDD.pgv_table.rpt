@@ -1,0 +1,7 @@
+                     Cell Name |     Power-Grid View |      Number of Instances
+-------------------------------------------------------------------------------
+                      PVDD1DGZ |                Tech |                        5
+                        pllclk |                Tech |                        1
+                   ram_128x16A |                Tech |                        1
+                   ram_256x16A |                Tech |                        1
+                   rom_512x16A |                Tech |                        1

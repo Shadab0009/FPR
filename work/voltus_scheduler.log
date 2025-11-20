@@ -1,0 +1,92 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v21.15-s076_1 (09/23/2022 08:39:08)
+*  Excecutable: /home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -nt 1 -usecellid -session_file ./work/sfe.session -cmd ./work/voltus_scheduler.cmd 
+*  Run by shadab on Thu Nov 20 16:23:42 2025
+*  Hostname: ra01
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 16:23:40 11/20/2025
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Begin Preparing Data for Parasitic Extraction
+ * Begin Load cell library
+ * Ended Load cell library: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=11.32MB/3797.09MB/1688.57MB) TimeFromStart: 2.89s Mem: 11.36MB
+
+ * Begin Pre-parse DEF and build hierachy
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/i_10048
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_10074
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_14
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_13
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_12
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_11
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_10
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_9
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_8
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_7
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_6
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_5
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_4
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_3
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_2
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_1
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_0
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/RAM_128x16_TEST_INST/i_15
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/SPI_INST/i_10639
+** WARN: (VOLTUS_SCHD-0182):	/tmp/innovus_temp_24931_ra01_shadab_wNNusj/eps_out_24931.def.gz has unplaced and ignored component DTMF_INST/SPI_INST/i_10638
+ * Ended Pre-parse DEF and build hierachy: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=23.12MB/3806.09MB/1688.57MB) TimeFromStart: 3.24s Mem: 23.15MB
+
+ * Begin Flatten, partition and dump design
+ * Begin Create cell name DB
+ * Ended Create cell name DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=538.31MB/4576.52MB/1765.36MB) TimeFromStart: 3.37s Mem: 538.47MB
+
+ * Begin Write cell name DB
+ * Ended Write cell name DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=538.47MB/4576.52MB/1765.38MB) TimeFromStart: 3.38s Mem: 538.49MB
+
+ * Ended Flatten, partition and dump design: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=538.61MB/4576.52MB/1765.73MB) TimeFromStart: 3.49s Mem: 538.84MB
+
+Extracting following DFM effects:
+MetalFill        : n/a
+WEE Effects      : n/a
+Erosion Effects  : n/a
+T/B Enlargements : n/a
+R(w) Effects     : n/a
+R(w,s) Effects   : n/a
+R(sw,st) Effects : n/a
+TC(w) Effects    : n/a
+Some effects indicate n/a because of non-availability of relevant input data (or) requested to be off.
+Ended Preparing Data for Parasitic Extraction: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=19.10MB/4576.49MB/1765.73MB)
+
+Finished Voltus Scheduler at 16:23:43 11/20/2025 (cpu=0:00:00, real=0:00:03, peak mem=1765.73MB)
+Current Innovus resource usage: (total cpu=0:00:50, real=0:09:20, mem=1245.99MB)
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v21.15-s076_1 (09/23/2022 08:39:08)
+*  Excecutable: /home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -skip_prep -nt 1 -usecellid -session_file ./work/sfe.session -cmd ./work/voltus_scheduler.cmd -zx /home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_extractor 
+*  Run by shadab on Thu Nov 20 16:23:43 2025
+*  Hostname: ra01
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 16:23:42 11/20/2025
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Begin Parasitic Extraction
+Extracting Progress:
+    0% at 16:23:43 11/20/2025
+Extraction command for partition 0: /home/install/INNOVUS211/tools.lnx86/ssvtools/bin/64bit/voltus_extractor -vstorm -partition 0 -partition_bbox 0 -2147483648 16239600 2147483647 -sfedb ./work/SFEDB -cachedir /tmp/innovus_temp_24931_ra01_shadab_wNNusj/zx_tmp_ra01_27340/DOvVtd -cmd ./work/VDD.cmd
+  100% at 16:23:49 11/20/2025
+Ended Parasitic Extraction: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=7.01MB/3785.07MB/1765.73MB)
+
+Finished Voltus Scheduler at 16:23:49 11/20/2025 (cpu=0:00:00, real=0:00:07, peak mem=1379.25MB)
+Current Innovus resource usage: (total cpu=0:00:50, real=0:09:26, mem=1234.08MB)
