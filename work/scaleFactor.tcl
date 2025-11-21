@@ -1,0 +1,1 @@
+update_rc_corner -name default_rc_corner_worst -preRoute_cap 1.070 -preRoute_res 1.157 -postRoute_cap {1.0 0.998 } -postRoute_res {1.0 0.996 } -postRoute_xcap {1.0 1.013 } -postRoute_clkcap {0.0 } -postRoute_clkres {0.0 } 
