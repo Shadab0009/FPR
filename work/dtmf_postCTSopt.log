@@ -14248,3 +14248,8 @@ WARNING   IMPSC-1138           1  In scan chain "%s" DEF ordered section, ...
 <CMD> setLayerPreference pinDensityMap -isVisible 0
 <CMD> selectInst DTMF_INST/TDSP_CORE_INST/EXECUTE_INST/acc_reg_1
 <CMD> fit
+
+*** Memory Usage v#1 (Current mem = 2509.270M, initial mem = 476.027M) ***
+*** Message Summary: 17777 warning(s), 34 error(s)
+
+--- Ending "Innovus" (totcpu=0:30:42, real=4:10:00, mem=2509.3M) ---
